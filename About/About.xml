@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Biotech Expansion - Mammalia</name>
+	<author>Lennoxicon</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>biotexpans.mammalia</packageId>
+	<modDependencies>
+		<li>
+			<packageId>ludeon.rimworld.biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+		<li>
+			<packageId>biotexpans.core</packageId>
+			<displayName>Biotech Expansion - Core</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2884018485</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>ludeon.rimworld.biotech</li>
+		<li>biotexpans.core</li>
+	</loadAfter>
+	<description>
+Adds genes inspired by contemporary terran mammals! Become a night predator or a peaceful herbivore, and so much more! Mod is a work in progress. Be on the look out for other biotech expansions!
+	</description>
+</ModMetaData>

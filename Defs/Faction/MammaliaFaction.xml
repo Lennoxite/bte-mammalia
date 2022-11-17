@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="TribeRoughBase">
+    <defName>TribeRoughMammals</defName>
+    <label>skulking mammalkin tribe</label>
+    <description>Having spent countless decades in their forest recluse, the mammalkin have grown weary of outsiders, and especially baseliners, whom they regard coldly. They are quick to engage in warfare at the first sign of danger. Composed of multiple mammal based xenohumans, such as Barkkin and Bonecrowns, particular care must be taken around these folk.</description>
+    <factionIconPath>World/Factions/MammalkinTribe</factionIconPath>
+    <pawnSingular>mammalkin</pawnSingular>
+    <pawnsPlural>mammalkin</pawnsPlural>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <settlementNameMaker>BTEMa_NamerSettlementSkulkingMammals</settlementNameMaker>
+    <factionNameMaker>BTEMa_NamerFactionSkulkingMammals</factionNameMaker>
+    <canStageAttacks>true</canStageAttacks>
+    <melaninRange>0~0.5</melaninRange>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <Barkkin>0.20</Barkkin>
+        <Bonecrown>0.20</Bonecrown>
+        <Wiretail>0.20</Wiretail>
+        <Hidewing>0.20</Hidewing>
+        <Seertusk>0.20</Seertusk>
+      </xenotypeChances>
+      <warnIfTotalAbove1>true</warnIfTotalAbove1>
+    </xenotypeSet>
+    <!--<dialogFactionGreetingHostile>NeanderthalFactionGreetingHostile</dialogFactionGreetingHostile>
+    <dialogFactionGreetingHostileAppreciative>NeanderthalFactionGreetingHostileAppreciative</dialogFactionGreetingHostileAppreciative>
+    <dialogFactionGreetingWary>NeanderthalFactionGreetingWary</dialogFactionGreetingWary>
+    <dialogFactionGreetingWarm>NeanderthalFactionGreetingWarm</dialogFactionGreetingWarm>-->
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Tribal_Penitent>5</Tribal_Penitent>
+          <Tribal_Warrior>5</Tribal_Warrior>
+          <Tribal_Archer>1</Tribal_Archer>
+          <Tribal_Hunter>1</Tribal_Hunter>
+          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, melee only -->
+        <kindDef>Combat</kindDef>
+        <commonality>150</commonality>
+        <options>
+          <Tribal_Penitent>10</Tribal_Penitent>
+          <Tribal_Warrior>10</Tribal_Warrior>
+          <Tribal_Berserker>10</Tribal_Berserker>
+          <Tribal_ChiefMelee>5</Tribal_ChiefMelee>
+      </options>
+      </li>
+      <li>
+        <!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>5</commonality>
+        <options>
+          <Tribal_Breacher>5</Tribal_Breacher>
+          <Tribal_Penitent>5</Tribal_Penitent>
+          <Tribal_Warrior>5</Tribal_Warrior>
+          <Tribal_Archer>1</Tribal_Archer>
+          <Tribal_Hunter>1</Tribal_Hunter>
+          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+      </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Tribal_Warrior>20</Tribal_Warrior>
+          <Tribal_Child>10</Tribal_Child>
+          <Tribal_Archer>1</Tribal_Archer>
+          <Tribal_Hunter>1</Tribal_Hunter>
+          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+          <Tribal_Berserker>5</Tribal_Berserker>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Tribal_Trader>1</Tribal_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2.5</Alpaca>
+          <Elephant>2</Elephant>
+        </carriers>
+        <guards>
+          <Tribal_Warrior>7</Tribal_Warrior>
+          <Tribal_Archer>1</Tribal_Archer>
+          <Tribal_Hunter>1</Tribal_Hunter>
+          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+          <Tribal_Berserker>7</Tribal_Berserker>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Tribal_Warrior>7</Tribal_Warrior>
+          <Tribal_Archer>1</Tribal_Archer>
+          <Tribal_Hunter>1</Tribal_Hunter>
+          <Tribal_HeavyArcher>1</Tribal_HeavyArcher>
+          <Tribal_Berserker>7</Tribal_Berserker>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>3</Tribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement_RangedOnly</kindDef>
+        <options>
+          <Tribal_Archer>10</Tribal_Archer>
+          <Tribal_Hunter>10</Tribal_Hunter>
+          <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
+          <Tribal_ChiefRanged>1</Tribal_ChiefRanged>
+          <Tribal_ChiefMelee>10</Tribal_ChiefMelee>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Miner>1</Tribal_Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Hunter>1</Tribal_Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Logger>1</Tribal_Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Tribal_Farmer>1</Tribal_Farmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+  
+  <FactionDef ParentName="TribeBase">
+    <defName>TribeCivilMammals</defName>
+    <label>gentle mammalkin tribe</label>
+    <description>Unlike their more aggressive brethren, this tribe of mammalkin is more predisposed towards peaceful relations. Composed of peaceful mammalkin such as the Hindhopper and the Cloudpuff, it is often less a matter of "won't fight," but "can't fight," but exceptions do exist.</description>
+    <factionIconPath>World/Factions/MammalkinTribeCivil</factionIconPath>
+    <colorSpectrum>
+      <li>(0.85, 0.75, 0.37)</li>
+      <li>(0.94, 0.61, 0.06)</li>
+    </colorSpectrum>
+    <pawnSingular>mammalkin</pawnSingular>
+    <pawnsPlural>mammalkin</pawnsPlural>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <Hindhopper>0.25</Hindhopper>
+        <Haytankard>0.25</Haytankard>
+        <Cloudpuff>0.25</Cloudpuff>
+        <Blastheart>0.25</Blastheart>
+      </xenotypeChances>
+      <warnIfTotalAbove1>true</warnIfTotalAbove1>
+    </xenotypeSet>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>50</configurationListOrderPriority>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+    <settlementNameMaker>BTEMa_NamerSettlementCivilMammals</settlementNameMaker>
+    <factionNameMaker>BTEMa_NamerFactionCivilMammals</factionNameMaker>
+  </FactionDef>  
+
+</Defs>
