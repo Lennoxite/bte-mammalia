@@ -9,9 +9,11 @@
     <inheritable>true</inheritable>
     <genes>
       <li>DarkVision</li>
-      <li>BTEMa_Nose_Lupine</li>
+      <li>BTEMa_Nose_Lupine</li> 
       <li>BTEMa_SharpClaws</li>
       <li>Hair_Gray</li>
+      <li>BTE_FeralMight</li>
+      <li>BTE_Carnivorous</li>
       <li>AptitudePoor_Shooting</li>
       <li>VoiceRoar</li>
       <li>Ears_Floppy</li>
@@ -28,6 +30,10 @@
       <li>Furskin</li>
       <li>Skin_SlateGray</li>
     </genes>
+    <forbiddenWeaponClasses>
+      <li>Melee</li>
+	  <li>Ranged</li>
+    </forbiddenWeaponClasses>
   </XenotypeDef>
   
   <XenotypeDef>
@@ -120,7 +126,6 @@
     <inheritable>true</inheritable>
     <genes>
       <li>BTEMa_FatalToxWeakness</li>
-      <li>Eyes_Gray</li>
       <li>Skin_LightGray</li>
       <li>Body_Fat</li>
       <li>Body_Hulk</li>
@@ -158,6 +163,7 @@
 	<li>BTEMa_SensitiveWhiskers</li>
       <li>BTEMa_RabbitEarsLopped</li>
       <li>BTEMa_NoseShort</li>
+      <li>BTE_Herbivorous</li>
       <li>BTEMa_TailRabbit</li>
       <li>Furskin</li>
       <li>MeleeDamage_Weak</li>

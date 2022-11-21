@@ -4,14 +4,14 @@
 
   <GeneCategoryDef>
     <defName>Mammalian</defName>
-    <label>mammalian</label>
-    <displayPriorityInXenotype>530</displayPriorityInXenotype>
+    <label>Biotech Expansion - Mammalia</label>
+    <displayPriorityInXenotype>531</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <GeneCategoryDef>
     <defName>MammalianArchite</defName>
     <label>mammalian archite</label>
-    <displayPriorityInXenotype>531</displayPriorityInXenotype>
+    <displayPriorityInXenotype>532</displayPriorityInXenotype>
   </GeneCategoryDef>
 
 </Defs>
