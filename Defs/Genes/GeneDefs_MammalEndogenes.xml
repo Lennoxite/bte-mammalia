@@ -533,6 +533,30 @@
     <biostatMet>-2</biostatMet>
   </GeneDef> 
   
+  <GeneDef>
+    <defName>BTEMa_DevilWool</defName>
+    <label>devilstrand wool grower</label>
+    <description>Carriers of this gene rapidly produce devilstrand cloth. This wool can be sheared every 30 days for 30 bundles of devilstrand. The coat provides some protection from the elements.</description>
+    <geneClass>BTE.Gene_RapidCoatGrowth</geneClass>
+    <iconPath>Genes/Icons/BTEMa_DevilWoolIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>73</displayOrderInCategory>
+	<modExtensions>
+		<li Class="BTE.GeneMaterialProduced">
+			<produces>DevilstrandCloth</produces>
+			<intervalDays>30</intervalDays>
+			<amount>30</amount>
+		</li>
+	</modExtensions>
+    <statOffsets>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+      <ComfyTemperatureMax>5</ComfyTemperatureMax>
+    </statOffsets>
+    <minAgeActive>13</minAgeActive>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-4</biostatMet>
+  </GeneDef>
+  
   	<GeneDef ParentName="GeneEarsBase">
 	<defName>BTEMa_SheepEars</defName>
 	<label>sheep ears</label>

@@ -245,6 +245,38 @@
     </genes>
   </XenotypeDef>
   
+  <XenotypeDef MayRequire="sarg.alphagenes">
+    <defName>Devilpuff</defName>
+    <label>devilpuff</label>
+    <description>Devilpuffs are sheep like xenohumans, who can produce devilstrand cloth from their bodies. They are similar, but different to their wool counterparts. They lack the fire weakness their wool based cousins have, but are somewhat more aggressive in general. They can readily consume raw foods and are capable at crafting and social ability, likely to take advantage of the crafting materials they always have access to. Although they have very strong hooves, they aren't particularly great at combat, and though their fur does take an edge off any hits it still stings quite a bit.</description>
+    <descriptionShort>Devilpuffs are sheep like xenohumans, who can produce devilstrand cloth from their bodies. They lack the fire weakness their wool based cousins have, but are somewhat more aggressive in general. They can readily consume raw foods and are capable at crafting and social ability, likely to take advantage of the crafting materials they always have access to. Although they have very strong hooves, they aren't particularly great at combat, and though their fur does take an edge off any hits it still stings quite a bit.</descriptionShort>
+    <iconPath>UI/Xenotypes/Devilpuff</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>BTEMa_DevilWool</li>
+      <li>BTEMa_SheepEars</li>
+      <li>BTEMa_HeavyHooves</li>
+	  <li>StrongStomach</li>
+      <li>RobustDigestion</li>
+      <li>BTEMa_NoseSheep</li>
+      <li>BTEMa_Tail_Small</li>
+      <li>MeleeDamage_Weak</li>
+      <li>Hair_BrightRed</li>
+	  <li>Skin_SlateGray</li>
+      <li>WoundHealing_Slow</li>
+	  <li>Skin_SheerWhite</li>
+      <li>Furskin</li>
+      <li>Mood_Pessimist</li>
+      <li>AptitudeStrong_Crafting</li>
+      <li>AptitudeStrong_Social</li>
+	  <li>Aggression_Aggressive</li>
+      <li>Pain_Extra</li>
+      <li>NakedSpeed</li>
+      <li>AG_DevilsheepHorns</li>
+	  <li>Robust</li>
+    </genes>
+  </XenotypeDef>
+  
   <XenotypeDef>
     <defName>Blastheart</defName>
     <label>blastheart</label>
