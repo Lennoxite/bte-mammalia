@@ -160,7 +160,7 @@
     <inheritable>true</inheritable>
     <genes>
       <li>BTEMa_RabbitEarsStraight</li>
-	<li>BTEMa_SensitiveWhiskers</li>
+	  <li>BTEMa_SensitiveWhiskers</li>
       <li>BTEMa_RabbitEarsLopped</li>
       <li>BTEMa_NoseShort</li>
       <li>BTE_Herbivorous</li>
