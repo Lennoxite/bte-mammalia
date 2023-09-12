@@ -21,7 +21,6 @@
 	<loadAfter>
 		<li>ludeon.rimworld.biotech</li>
 		<li>biotexpans.core</li>
-		<li>CETeam.CombatExtended</li>
 		<!-- <li>sarg.alphagenes</li> -->
 	</loadAfter>
 	<description>
