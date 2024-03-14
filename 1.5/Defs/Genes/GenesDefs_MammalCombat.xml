@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef>
+    <defName>BTEMa_SharpClaws</defName>
+    <label>sharp claws</label>
+    <description>Carriers of this gene have a set of sharp claws tip their hands. These claws tear through fleshy targets at lightning speed, but suffer greatly against armor.\n\nIf an affected limb is destroyed and replaced, the claws may take up to a day to regenerate.</description>
+    <geneClass>BTE.Gene_AddImplant</geneClass>
+    <iconPath>Genes/Icons/BTEMa_SharpClawsIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>1</displayOrderInCategory>
+	<modExtensions>
+		<li Class="BTE.GeneImplantInfo">
+			<hediffImplant>BTEMa_SharpClaws</hediffImplant>
+			<bodyPartImplant>Hand</bodyPartImplant>
+		</li>
+	</modExtensions>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+  
+    <GeneDef>
+    <defName>BTEMa_HeavyHooves</defName>
+    <label>heavy hooves</label>
+    <description>Carriers of this gene have their feet changed into cloven hooves. Attacks with these are slow, but punch through armor.\n\nIf an affected limb is destroyed and replaced, the hooves may take up to a day to regenerate.</description>
+    <geneClass>BTE.Gene_AddImplant</geneClass>
+    <iconPath>Genes/Icons/BTEMa_HeavyHoovesIcon</iconPath>
+	<modExtensions>
+		<li Class="BTE.GeneImplantInfo">
+			<hediffImplant>BTEMa_HeavyHooves</hediffImplant>
+			<bodyPartImplant>Leg</bodyPartImplant>
+		</li>
+	</modExtensions>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>10</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>BTEMa_SensitiveWhiskers</defName>
+    <label>sensitive whiskers</label>
+    <description>Carriers of this gene have a set of fine whiskers on their face. This grants them a profoundly rapid reaction speed in combat. It also makes injuries hurt just a bit more than normal.</description>
+    <statOffsets>
+      <MeleeDodgeChance>15</MeleeDodgeChance>
+    </statOffsets>
+	<painFactor>1.2</painFactor>
+    <iconPath>Genes/Icons/BTEMa_SensitiveWhiskersIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>33</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>0</biostatMet>
+  </GeneDef>
+  
+    <GeneDef>
+    <defName>BTEMa_ElongatedFangs</defName>
+    <label>elongated fangs</label>
+    <description>Carriers of this gene have their canines thickened and lengthened into giant fangs. Attacks with these are somewhat quick, and deal middling bite damage.\n\nIf an affected limb is destroyed and replaced, the fang may take up to a day to regenerate.</description>
+    <geneClass>BTE.Gene_AddImplant</geneClass>
+    <iconPath>Genes/Icons/BTEMa_ElongatedFangsIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+	<modExtensions>
+		<li Class="BTE.GeneImplantInfo">
+			<hediffImplant>BTEMa_ElongatedFangs</hediffImplant>
+			<bodyPartImplant>Jaw</bodyPartImplant>
+		</li>
+	</modExtensions>
+    <displayOrderInCategory>43</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>BTEMa_Farsighted</defName>
+    <label>farsighted</label>
+    <iconPath>Genes/Icons/BTEMa_FarsightedIcon</iconPath>
+    <description>Carriers of this gene can see very far away, but closeby things are blurry. Their shooting accuracy at long ranges is boosted at the cost of their short range accuracy.</description>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>45</displayOrderInCategory>
+    <statFactors>
+	
+      <ShootingAccuracyFactor_Short>0.9</ShootingAccuracyFactor_Short>
+      <ShootingAccuracyFactor_Long>1.2</ShootingAccuracyFactor_Long>
+      <ShootingAccuracyFactor_Medium>1</ShootingAccuracyFactor_Medium>
+    </statFactors>
+    <biostatMet>-1</biostatMet>
+    <exclusionTags>
+      <li>ShootingAccuracy</li>
+    </exclusionTags>
+  </GeneDef>
+  
+    <GeneDef>
+    <defName>BTEMa_DeathBlast</defName>
+    <label>death blast</label>
+    <description>Carriers of this gene have a volatile chemfuel system in their bodies that rapidly destabilizes upon the death of the carrier, leading to a massive fire explosion.</description>
+    <geneClass>BTE.Gene_AddImplant</geneClass>
+    <iconPath>Genes/Icons/BTEMa_DeathBlastIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+	<modExtensions>
+		<li Class="BTE.GeneImplantInfo">
+			<hediffImplant>BTEMa_VolatileChemfuelSystem</hediffImplant>
+			<bodyPartImplant>Torso</bodyPartImplant>
+		</li>
+	</modExtensions>
+    <displayOrderInCategory>93</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>3</biostatMet>
+  </GeneDef>
+
+    <GeneDef>
+    <defName>BTEMa_DeathBlastAntimatter</defName>
+    <label>antimatter death blast</label>
+    <description>Either a cruel joke or intended as a sadistic weapon, carriers of this gene have an archite fueled antimatter generation system in their bodies that rapidly destabilizes upon the death of the carrier, leading to an absurdly large explosion. This explosion is considerably larger than a typical antigrain warhead, but the antimatter system enables the body to sustain an extremely high metabolic efficiency.</description>
+    <geneClass>BTE.Gene_AddImplant</geneClass>
+    <iconPath>Genes/Icons/BTEMa_AntimatterDeathBlastIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+	<modExtensions>
+		<li Class="BTE.GeneImplantInfo">
+			<hediffImplant>BTEMa_VolatileAntimatterSystem</hediffImplant>
+			<bodyPartImplant>Torso</bodyPartImplant>
+		</li>
+	</modExtensions>
+    <displayOrderInCategory>93</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>9</biostatMet>
+    <biostatArc>1</biostatArc>
+  </GeneDef>
+  
+    <GeneDef>
+    <defName>BTEMa_AntimatterGenerator</defName>
+    <label>antimatter harvest cell</label>
+    <description>Carriers of this gene have an overactive antimatter generation system. This allows them to be "milked" to produce antigrain shells very, very rarely.</description>
+    <geneClass>BTE.Gene_ExcessMilkProduction</geneClass>
+    <iconPath>Genes/Icons/BTEMa_AntimatterGeneratorIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+    <prerequisite>BTEMa_DeathBlastAntimatter</prerequisite>
+	<modExtensions>
+		<li Class="BTE.GeneMaterialProduced">
+			<produces>Shell_AntigrainWarhead</produces>
+			<intervalDays>90</intervalDays>
+			<amount>1</amount>
+		</li>
+	</modExtensions>
+    <exclusionTags>
+      <li>Milk</li>
+    </exclusionTags>
+    <displayOrderInCategory>94</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-3</biostatMet>
+    <biostatArc>1</biostatArc>
+  </GeneDef>
+</Defs>

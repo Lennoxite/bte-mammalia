@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="TribeRoughBase">
+    <defName>TribeRoughMammals</defName>
+    <label>skulking mammalkin tribe</label>
+    <description>Having spent countless decades in their forest recluse, the mammalkin have grown weary of outsiders, and especially baseliners, whom they regard coldly. They are quick to engage in warfare at the first sign of danger. Composed of multiple mammal based xenohumans, such as Barkkin and Bonecrowns, particular care must be taken around these folk.</description>
+    <factionIconPath>World/Factions/MammalkinTribe</factionIconPath>
+    <pawnSingular>mammalkin</pawnSingular>
+    <pawnsPlural>mammalkin</pawnsPlural>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <settlementNameMaker>BTEMa_NamerSettlementSkulkingMammals</settlementNameMaker>
+    <factionNameMaker>BTEMa_NamerFactionSkulkingMammals</factionNameMaker>
+    <canStageAttacks>true</canStageAttacks>
+    <melaninRange>0~0.5</melaninRange>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <Barkkin>0.20</Barkkin>
+        <Bonecrown>0.20</Bonecrown>
+        <Wiretail>0.20</Wiretail>
+        <Hidewing>0.20</Hidewing>
+        <Seertusk>0.20</Seertusk>
+      </xenotypeChances>
+    </xenotypeSet>
+    <!--<dialogFactionGreetingHostile>NeanderthalFactionGreetingHostile</dialogFactionGreetingHostile>
+    <dialogFactionGreetingHostileAppreciative>NeanderthalFactionGreetingHostileAppreciative</dialogFactionGreetingHostileAppreciative>
+    <dialogFactionGreetingWary>NeanderthalFactionGreetingWary</dialogFactionGreetingWary>
+    <dialogFactionGreetingWarm>NeanderthalFactionGreetingWarm</dialogFactionGreetingWarm>-->
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <BTE_CarniTribal_Penitent>5</BTE_CarniTribal_Penitent>
+          <BTE_CarniTribal_Warrior>5</BTE_CarniTribal_Warrior>
+          <BTE_CarniTribal_Archer>1</BTE_CarniTribal_Archer>
+          <BTE_CarniTribal_Hunter>1</BTE_CarniTribal_Hunter>
+          <BTE_CarniTribal_HeavyArcher>1</BTE_CarniTribal_HeavyArcher>
+          <BTE_CarniTribal_Berserker>5</BTE_CarniTribal_Berserker>
+          <BTE_CarniTribal_ChiefRanged>1</BTE_CarniTribal_ChiefRanged>
+          <BTE_CarniTribal_ChiefMelee>3</BTE_CarniTribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, melee only -->
+        <kindDef>Combat</kindDef>
+        <commonality>150</commonality>
+        <options>
+          <BTE_CarniTribal_Penitent>10</BTE_CarniTribal_Penitent>
+          <BTE_CarniTribal_Warrior>10</BTE_CarniTribal_Warrior>
+          <BTE_CarniTribal_Berserker>10</BTE_CarniTribal_Berserker>
+          <BTE_CarniTribal_ChiefMelee>5</BTE_CarniTribal_ChiefMelee>
+      </options>
+      </li>
+      <li>
+        <!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>5</commonality>
+        <options>
+          <BTE_CarniTribal_Breacher>5</BTE_CarniTribal_Breacher>
+          <BTE_CarniTribal_Penitent>5</BTE_CarniTribal_Penitent>
+          <BTE_CarniTribal_Warrior>5</BTE_CarniTribal_Warrior>
+          <BTE_CarniTribal_Archer>1</BTE_CarniTribal_Archer>
+          <BTE_CarniTribal_Hunter>1</BTE_CarniTribal_Hunter>
+          <BTE_CarniTribal_HeavyArcher>1</BTE_CarniTribal_HeavyArcher>
+          <BTE_CarniTribal_Berserker>5</BTE_CarniTribal_Berserker>
+          <BTE_CarniTribal_ChiefRanged>1</BTE_CarniTribal_ChiefRanged>
+          <BTE_CarniTribal_ChiefMelee>3</BTE_CarniTribal_ChiefMelee>
+      </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <BTE_CarniTribal_Warrior>20</BTE_CarniTribal_Warrior>
+          <BTE_CarniTribal_Child>10</BTE_CarniTribal_Child>
+          <BTE_CarniTribal_Archer>1</BTE_CarniTribal_Archer>
+          <BTE_CarniTribal_Hunter>1</BTE_CarniTribal_Hunter>
+          <BTE_CarniTribal_HeavyArcher>1</BTE_CarniTribal_HeavyArcher>
+          <BTE_CarniTribal_Berserker>5</BTE_CarniTribal_Berserker>
+          <BTE_CarniTribal_ChiefRanged>1</BTE_CarniTribal_ChiefRanged>
+          <BTE_CarniTribal_ChiefMelee>3</BTE_CarniTribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <BTE_CarniTribal_Trader>1</BTE_CarniTribal_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2.5</Alpaca>
+          <Elephant>2</Elephant>
+        </carriers>
+        <guards>
+          <BTE_CarniTribal_Warrior>7</BTE_CarniTribal_Warrior>
+          <BTE_CarniTribal_Archer>1</BTE_CarniTribal_Archer>
+          <BTE_CarniTribal_Hunter>1</BTE_CarniTribal_Hunter>
+          <BTE_CarniTribal_HeavyArcher>1</BTE_CarniTribal_HeavyArcher>
+          <BTE_CarniTribal_Berserker>7</BTE_CarniTribal_Berserker>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <BTE_CarniTribal_Warrior>7</BTE_CarniTribal_Warrior>
+          <BTE_CarniTribal_Archer>1</BTE_CarniTribal_Archer>
+          <BTE_CarniTribal_Hunter>1</BTE_CarniTribal_Hunter>
+          <BTE_CarniTribal_HeavyArcher>1</BTE_CarniTribal_HeavyArcher>
+          <BTE_CarniTribal_Berserker>7</BTE_CarniTribal_Berserker>
+          <BTE_CarniTribal_ChiefRanged>1</BTE_CarniTribal_ChiefRanged>
+          <BTE_CarniTribal_ChiefMelee>3</BTE_CarniTribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement_RangedOnly</kindDef>
+        <options>
+          <BTE_CarniTribal_Archer>10</BTE_CarniTribal_Archer>
+          <BTE_CarniTribal_Hunter>10</BTE_CarniTribal_Hunter>
+          <BTE_CarniTribal_HeavyArcher>10</BTE_CarniTribal_HeavyArcher>
+          <BTE_CarniTribal_ChiefRanged>1</BTE_CarniTribal_ChiefRanged>
+          <BTE_CarniTribal_ChiefMelee>10</BTE_CarniTribal_ChiefMelee>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <BTE_CarniTribal_Miner>1</BTE_CarniTribal_Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <BTE_CarniTribal_Hunter>1</BTE_CarniTribal_Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <BTE_CarniTribal_Logger>1</BTE_CarniTribal_Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <BTE_CarniTribal_Farmer>1</BTE_CarniTribal_Farmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>
+  
+  <FactionDef ParentName="TribeBase">
+    <defName>TribeCivilMammals</defName>
+    <label>gentle mammalkin tribe</label>
+    <description>Unlike their more aggressive brethren, this tribe of mammalkin is more predisposed towards peaceful relations. Composed of peaceful mammalkin such as the Hindhopper and the Cloudpuff, it is often less a matter of "won't fight," but "can't fight," but exceptions do exist.</description>
+    <factionIconPath>World/Factions/MammalkinTribeCivil</factionIconPath>
+    <colorSpectrum>
+      <li>(0.85, 0.75, 0.37)</li>
+      <li>(0.94, 0.61, 0.06)</li>
+    </colorSpectrum>
+    <pawnSingular>mammalkin</pawnSingular>
+    <pawnsPlural>mammalkin</pawnsPlural>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <Hindhopper>0.25</Hindhopper>
+        <Haytankard>0.25</Haytankard>
+        <Cloudpuff>0.25</Cloudpuff>
+        <Blastheart>0.25</Blastheart>
+      </xenotypeChances>
+    </xenotypeSet>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>50</configurationListOrderPriority>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+    <settlementNameMaker>BTEMa_NamerSettlementCivilMammals</settlementNameMaker>
+    <factionNameMaker>BTEMa_NamerFactionCivilMammals</factionNameMaker>
+	
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <BTE_CarniTribal_Penitent>5</BTE_CarniTribal_Penitent>
+          <BTE_CarniTribal_Warrior>5</BTE_CarniTribal_Warrior>
+          <BTE_CarniTribal_Archer>1</BTE_CarniTribal_Archer>
+          <BTE_CarniTribal_Hunter>1</BTE_CarniTribal_Hunter>
+          <BTE_CarniTribal_HeavyArcher>1</BTE_CarniTribal_HeavyArcher>
+          <BTE_CarniTribal_Berserker>5</BTE_CarniTribal_Berserker>
+          <BTE_CarniTribal_ChiefRanged>1</BTE_CarniTribal_ChiefRanged>
+          <BTE_CarniTribal_ChiefMelee>3</BTE_CarniTribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, melee only -->
+        <kindDef>Combat</kindDef>
+        <commonality>150</commonality>
+        <options>
+          <BTE_CarniTribal_Penitent>10</BTE_CarniTribal_Penitent>
+          <BTE_CarniTribal_Warrior>10</BTE_CarniTribal_Warrior>
+          <BTE_CarniTribal_Berserker>10</BTE_CarniTribal_Berserker>
+          <BTE_CarniTribal_ChiefMelee>5</BTE_CarniTribal_ChiefMelee>
+      </options>
+      </li>
+      <li>
+        <!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>5</commonality>
+        <options>
+          <BTE_CarniTribal_Breacher>5</BTE_CarniTribal_Breacher>
+          <BTE_CarniTribal_Penitent>5</BTE_CarniTribal_Penitent>
+          <BTE_CarniTribal_Warrior>5</BTE_CarniTribal_Warrior>
+          <BTE_CarniTribal_Archer>1</BTE_CarniTribal_Archer>
+          <BTE_CarniTribal_Hunter>1</BTE_CarniTribal_Hunter>
+          <BTE_CarniTribal_HeavyArcher>1</BTE_CarniTribal_HeavyArcher>
+          <BTE_CarniTribal_Berserker>5</BTE_CarniTribal_Berserker>
+          <BTE_CarniTribal_ChiefRanged>1</BTE_CarniTribal_ChiefRanged>
+          <BTE_CarniTribal_ChiefMelee>3</BTE_CarniTribal_ChiefMelee>
+      </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <BTE_CarniTribal_Warrior>20</BTE_CarniTribal_Warrior>
+          <BTE_CarniTribal_Child>10</BTE_CarniTribal_Child>
+          <BTE_CarniTribal_Archer>1</BTE_CarniTribal_Archer>
+          <BTE_CarniTribal_Hunter>1</BTE_CarniTribal_Hunter>
+          <BTE_CarniTribal_HeavyArcher>1</BTE_CarniTribal_HeavyArcher>
+          <BTE_CarniTribal_Berserker>5</BTE_CarniTribal_Berserker>
+          <BTE_CarniTribal_ChiefRanged>1</BTE_CarniTribal_ChiefRanged>
+          <BTE_CarniTribal_ChiefMelee>3</BTE_CarniTribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <BTE_CarniTribal_Trader>1</BTE_CarniTribal_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2.5</Alpaca>
+          <Elephant>2</Elephant>
+        </carriers>
+        <guards>
+          <BTE_CarniTribal_Warrior>7</BTE_CarniTribal_Warrior>
+          <BTE_CarniTribal_Archer>1</BTE_CarniTribal_Archer>
+          <BTE_CarniTribal_Hunter>1</BTE_CarniTribal_Hunter>
+          <BTE_CarniTribal_HeavyArcher>1</BTE_CarniTribal_HeavyArcher>
+          <BTE_CarniTribal_Berserker>7</BTE_CarniTribal_Berserker>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <BTE_CarniTribal_Warrior>7</BTE_CarniTribal_Warrior>
+          <BTE_CarniTribal_Archer>1</BTE_CarniTribal_Archer>
+          <BTE_CarniTribal_Hunter>1</BTE_CarniTribal_Hunter>
+          <BTE_CarniTribal_HeavyArcher>1</BTE_CarniTribal_HeavyArcher>
+          <BTE_CarniTribal_Berserker>7</BTE_CarniTribal_Berserker>
+          <BTE_CarniTribal_ChiefRanged>1</BTE_CarniTribal_ChiefRanged>
+          <BTE_CarniTribal_ChiefMelee>3</BTE_CarniTribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement_RangedOnly</kindDef>
+        <options>
+          <BTE_CarniTribal_Archer>10</BTE_CarniTribal_Archer>
+          <BTE_CarniTribal_Hunter>10</BTE_CarniTribal_Hunter>
+          <BTE_CarniTribal_HeavyArcher>10</BTE_CarniTribal_HeavyArcher>
+          <BTE_CarniTribal_ChiefRanged>1</BTE_CarniTribal_ChiefRanged>
+          <BTE_CarniTribal_ChiefMelee>10</BTE_CarniTribal_ChiefMelee>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <BTE_CarniTribal_Miner>1</BTE_CarniTribal_Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <BTE_CarniTribal_Hunter>1</BTE_CarniTribal_Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <BTE_CarniTribal_Logger>1</BTE_CarniTribal_Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <BTE_CarniTribal_Farmer>1</BTE_CarniTribal_Farmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+  </FactionDef>  
+
+</Defs>

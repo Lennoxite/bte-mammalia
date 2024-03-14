@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <XenotypeDef>
+    <defName>Barkkin</defName>
+    <label>barkkin</label>
+    <description>Forced to adapt to hostile and violent environments, the Barkkin altered their bodies to fight with the same ferocity as the terran wolves of old. Built for dark and cold biomes, the barkkin are best used as night time hunters and raiders, and dominate close combat with their natural weapons and strength, but they suffer against long ranged and heavily armored enemies. They are also more aggressive than their baseline brethren. Though strong in battle, their ability for creative pursuits are largely diminished, and animals tend to not like them.</description>
+    <descriptionShort>The Barkkin are night time fighters and hunters who prefer the colder regions of the world. They struggle in long range combat and are easy to anger.</descriptionShort>
+    <iconPath>UI/Xenotypes/Barkkin</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>DarkVision</li>
+      <li>BTEMa_Nose_Lupine</li> 
+      <li>BTEMa_SharpClaws</li>
+      <li>Hair_Gray</li>
+      <li>BTE_FeralMight</li>
+      <li>BTE_Carnivorous</li>
+      <li>AptitudePoor_Shooting</li>
+      <li>VoiceRoar</li>
+      <li>Ears_Floppy</li>
+      <li>BTEMa_VulpineEars</li>
+      <li>KillThirst</li>
+      <li>Aggression_Aggressive</li>
+	  <li>StrongStomach</li>
+      <li>RobustDigestion</li>
+      <li>AptitudePoor_Animals</li>
+      <li>AptitudeTerrible_Artistic</li>
+      <li>AptitudeStrong_Melee</li>
+      <li>Tail_Furry</li>
+      <li>BTEMa_Tail_Vulpine</li>
+      <li>Furskin</li>
+      <li>Skin_SlateGray</li>
+    </genes>
+    <forbiddenWeaponClasses>
+      <li>Melee</li>
+	  <li>Ranged</li>
+    </forbiddenWeaponClasses>
+  </XenotypeDef>
+  
+  <XenotypeDef>
+    <defName>Bonecrown</defName>
+    <label>bonecrown</label>
+    <description>Choosing endurance over raw killing power, bonecrowns function as defensive fighters who can beat back even heavily armored opponents. Their hardy nature leaves their mobility much to be desired however. Bonecrowns derive their chosen gene edits based on the stout elk, and other cervines. Unlike their more aggressive cousins, bonecrowns prefer a more peaceful life, and are innately born with a stronger understanding of plants and social mores. Though not much. They are somewhat more vulnerable to environmental hazards than most due to their prolonged attachment to very temperate biomes.</description>
+    <descriptionShort>Bonecrowns function as defensive fighters who can beat back even armored opponents. Their hardy nature leaves their mobility much to be desired however. Bonecrowns derive their chosen gene edits based on the stout elk, and other cervines. They are vulnerable to non-temperate temperatures.</descriptionShort>
+    <iconPath>UI/Xenotypes/Bonecrown</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>BTEMa_HeavyHooves</li> <!--Slow but strong blunt damage. High armor penetration.-->
+		<li>BTEMa_Antlers</li> <!--Grants headbutt ability. Stuns for a few seconds.-->
+      <li>BTEMa_CervineEars</li>
+      <li>BTEMa_NoseCervine</li>
+      <li>BTEMa_Tail_Small</li>
+      <li>Robust</li>
+      <li>Furskin</li>
+      <li>MoveSpeed_Slow</li>
+      <li>MinTemp_SmallIncrease</li>
+      <li>MaxTemp_SmallDecrease</li>
+      <li>AptitudeStrong_Social</li>
+      <li>AptitudeStrong_Plants</li>
+    </genes>
+  </XenotypeDef>
+ 
+  <XenotypeDef>
+    <defName>Wiretail</defName>
+    <label>wiretail</label>
+    <description>Not all mammalkin chose ferocity over all else. The wiretails used gene mods inspired by rats and other rodents to enhance their already crafty natures. Mining and crafting are easy for them, and although they are very weak in physical combat, they possess the speed to outrun danger if need be. Their metabolism suffers greatly underneath these modifications, however.</description>
+    <descriptionShort>Wiretails are rat like xenohumans that specialize in mining and crafting, but are largely incapable of real combat.</descriptionShort>
+    <iconPath>UI/Xenotypes/Wiretail</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>BTEMa_SharpClaws</li>
+	<li>BTEMa_SensitiveWhiskers</li>
+      <li>BTEMa_RatEars</li>
+      <li>BTEMa_NoseShort</li>
+      <li>BTEMa_Tail_Rat</li>
+      <li>WoundHealing_Slow</li>
+      <li>Furskin</li>
+      <li>MeleeDamage_Weak</li>
+      <li>Pain_Extra</li>
+	  <li>MoveSpeed_Quick</li>
+      <li>Hair_SnowWhite</li>
+	  <li>Skin_SheerWhite</li>
+      <li>AptitudeStrong_Crafting</li>
+      <li>AptitudeStrong_Mining</li>
+    </genes>
+    <forbiddenWeaponClasses>
+      <li>Melee</li>
+    </forbiddenWeaponClasses>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>Hidewing</defName>
+    <label>hidewing</label>
+    <description>Winged xenohumans based on the bat. An exception to the mammalkin's preference of close combat, the hidewing specializes in long range combat, and they have to due to their exceptional physical frailty. This weakness however leaves them quite agile and light, allowing them to be able to use their wings to augment their jumping. Outside the battlefield they are often relegated to affairs such as cooking, ranching, and hunting due to their amplified sense of smell and penchant for ranged combat, but are utterly incapable of medical work due to their farsightedness.</description>
+    <descriptionShort>Winged xenohumans based on the bat. They are proficient at long ranged combat and are very agile, but suffer in short range combat. They are great with animals and cooking, and are hopeless in medical affairs.</descriptionShort>
+    <iconPath>UI/Xenotypes/Hidewing</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>BTEMa_ElongatedFangs</li>
+	  <li>BTEMa_Farsighted</li>
+      <li>BTEMa_BatEars</li>
+      <li>BTEMa_NoseBat</li>
+      <li>BTEMa_HideboundWings</li>
+      <li>Furskin</li>
+	  <li>Hair_DarkBrown</li>
+	  <li>MoveSpeed_Quick</li>
+      <li>AptitudeStrong_Animals</li>
+      <li>AptitudeStrong_Cooking</li>
+      <li>AptitudeTerrible_Medicine</li>
+      <li>AptitudeTerrible_Intellectual</li>
+      <li>Pain_Extra</li>
+      <li>Delicate</li>
+      <li>DarkVision</li>
+    </genes>
+    <forbiddenWeaponClasses>
+      <li>ShortShots</li>
+      <li>Melee</li>
+    </forbiddenWeaponClasses>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>Seertusk</defName>
+    <label>Seertusk</label>
+    <description>Large xenohumans based on the elephant. Driven by the mammalkin's need for an intelligent leader, the seertusks bio-engineered themselves with a heavy focus on mental matters. They have an aptitude for intellectual and medicinal work, but their neglect of their body has left them slow and languid. Although they have reduced pain, their emotions are utterly suppressed in favor of extreme psychic ability, and their constant exposure to the psychic field has left them rather ornery. Despite this, they are capable of imitating psychic phenomenon only found in artifacts, albeit poorly. Serving as either backline psycasters, or as tacticians and shamans at home, the role of the seertusk is heavily ingrained in mammalkin society.</description>
+    <descriptionShort>Elephant based xenohumans with an extreme focus on mental acuity and psychic power, they are designed for leadership roles. They suffer in most physical matters and tire out more easily, and are emotionally and physically deadened by their high mental focus. </descriptionShort>
+    <iconPath>UI/Xenotypes/Seertusk</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>BTEMa_FatalToxWeakness</li>
+      <li>Skin_LightGray</li>
+      <li>Body_Fat</li>
+      <li>Body_Hulk</li>
+      <li>Beard_NoBeardOnly</li>
+      <li>BTEMa_ElephantEars</li>
+      <li>BTEMa_NoseElephant</li>
+      <li>BTEMa_TailElephant</li>
+	  <li>MoveSpeed_Slow</li>
+      <li>Pain_Reduced</li>
+      <li>Unstoppable</li>
+      <li>Aggression_DeadCalm</li>
+      <li>PsychicAbility_Extreme</li>
+      <li>AptitudeStrong_Medicine</li>
+      <li>AptitudeStrong_Intellectual</li>
+      <li>AptitudeStrong_Social</li>
+      <li>WoundHealing_Slow</li>
+      <li>Mood_Pessimist</li>
+      <li>Sleepy</li>
+	  <li>BTEMa_ElephantMemory</li>
+	  <li>BTEMa_PsychicFuryNeedle</li>
+    </genes>
+  </XenotypeDef>
+  
+ <!--NON-CORE XENOTYPES-->
+
+  <XenotypeDef>
+    <defName>Hindhopper</defName>
+    <label>hindhopper</label>
+    <description>Hindhoppers are rabbit like xenohumans, who chose a peaceful existence of farming and burrowing over all else. Whether by choice or accident, they are practically incapable of combat, but are great workers. They possess a unique intuition from their rabbit genes which grant a planting ability that exceeds human capability. Likely from less violent regions of the forest, hindhoppers are easily scared but have the speed to outpace any enemies.</description>
+    <descriptionShort>Hindhoppers are rabbit like xenohumans, who chose a peaceful existence of farming and burrowing over all else. Whether by choice or accident, they are practically incapable of combat, but are great workers. They possess a unique intuition from their rabbit genes which grant a planting ability that exceeds human capability.</descriptionShort>
+    <iconPath>UI/Xenotypes/Hindhopper</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>BTEMa_RabbitEarsStraight</li>
+	  <li>BTEMa_SensitiveWhiskers</li>
+      <li>BTEMa_RabbitEarsLopped</li>
+      <li>BTEMa_NoseShort</li>
+      <li>BTE_Herbivorous</li>
+      <li>BTEMa_TailRabbit</li>
+      <li>Furskin</li>
+      <li>MeleeDamage_Weak</li>
+	  <li>MoveSpeed_VeryQuick</li>
+      <li>Hair_SnowWhite</li>
+	  <li>Skin_SheerWhite</li>
+	  <li>BTEMa_RabbitsIntuition</li>
+      <li>AptitudeRemarkable_Plants</li>
+      <li>AptitudeStrong_Mining</li>
+      <li>AptitudeTerrible_Shooting</li>
+      <li>AptitudeTerrible_Melee</li>
+	  <li>KindInstinct</li>
+      <li>Pain_Extra</li>
+      <li>FireTerror</li>
+      <li>Delicate</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>Haytankard</defName>
+    <label>Haytankard</label>
+    <description>Haytankards are cow based xenohumans that are very tough and capable of digesting even raw foods without issue. Despite this, they possess a very slow lifestyle,are easily tired, vulnerable to toxic pollution, and worse of all can be easily provoked. Their most unique trait is their ability to produce an excess of cow milk, which can be put to use by the more practical minded. Their ability to convert raw food to milk has diminished their cooking skills, but improved their growing skills. It is believed that haytankards adapted their bodies in this way to ensure a more stable means of supporting their children in regions where droughts were common, requiring a stronger stomach and the ability to convert unsavory to more palatable forms.</description>
+    <descriptionShort>Haytankards are cow based xenohumans that are very tough and capable of digesting even raw foods without issue. Despite this, they possess a very slow lifestyle,are easily tired, vulnerable to toxic pollution, and worse of all can be easily provoked. Their most unique trait is their ability to produce an excess of cow milk, which can be put to use by the more practical minded. Their ability to convert raw food to milk has diminished their cooking skills, but improved their growing skills.</descriptionShort>
+    <iconPath>UI/Xenotypes/Haytankard</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+	  <li>BTEMa_ExcessMilkProduction</li>
+      <li>BTEMa_FatalToxWeakness</li>
+      <li>BTEMa_BovineEars</li>
+      <li>BTEMa_NoseBovine</li>
+      <li>BTEMa_HeavyHooves</li>
+      <li>Furskin</li>
+      <li>MeleeDamage_Strong</li>
+      <li>BTEMa_TailElephant</li>
+	  <li>Hair_ReddishBrown</li>
+	  <li>Headbone_Human</li>
+      <li>Headbone_MiniHorns</li>
+	  <li>MoveSpeed_Slow</li>
+	  <li>Robust</li>
+      <li>Pain_Reduced</li>
+      <li>Aggression_Aggressive</li>
+	  <li>StrongStomach</li>
+      <li>RobustDigestion</li>
+      <li>Sleepy</li>
+      <li>AptitudeStrong_Plants</li>
+      <li>AptitudePoor_Cooking</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>Cloudpuff</defName>
+    <label>cloudpuff</label>
+    <description>Cloudpuffs are sheep like xenohumans, who has engineered their own fur to rapidly grow, allowing a constant supply of wool to be sheared off. They can readily consume raw foods and are capable at crafting and social ability, likely to take advantage of the crafting materials they always have access to. Although they have very strong hooves, they aren't particularly great at combat, and though their fur does take an edge off any hits it still stings quite a bit. Fire is extremely dangerous to them, and is known to send them into wild panics. Cloudpuffs likely originated from some sort of slavery caste, but were able to genetically grant themselves a gift at crafting and social ability to make use of their own wool and pay off or otherwise escape their bonds.</description>
+    <descriptionShort>Cloudpuffs are sheep like xenohumans, who has engineered their own fur to rapidly grow, allowing a constant supply of wool to be sheared off. They can readily consume raw foods and are capable at crafting and social ability, likely to take advantage of the crafting materials they always have access to. Although they have very strong hooves, they aren't particularly great at combat, and though their fur does take an edge off any hits it still stings quite a bit. Fire is extremely dangerous to them, and is known to send them into wild panics.</descriptionShort>
+    <iconPath>UI/Xenotypes/Cloudpuff</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>BTEMa_RapidCoatGrowth</li>
+      <li>BTEMa_SheepEars</li>
+      <li>BTEMa_HeavyHooves</li>
+	  <li>StrongStomach</li>
+      <li>RobustDigestion</li>
+      <li>BTEMa_NoseSheep</li>
+      <li>BTEMa_Tail_Small</li>
+      <li>MeleeDamage_Weak</li>
+      <li>Hair_SnowWhite</li>
+	  <li>Skin_SlateGray</li>
+      <li>WoundHealing_Slow</li>
+	  <li>Skin_SheerWhite</li>
+      <li>Furskin</li>
+      <li>FireWeakness</li>
+      <li>AptitudeStrong_Crafting</li>
+      <li>AptitudeStrong_Social</li>
+	  <li>KindInstinct</li>
+      <li>Pain_Extra</li>
+      <li>NakedSpeed</li>
+      <li>FireTerror</li>
+	  <li>Robust</li>
+    </genes>
+  </XenotypeDef>
+  
+  <XenotypeDef MayRequire="sarg.alphagenes">
+    <defName>Devilpuff</defName>
+    <label>devilpuff</label>
+    <description>Devilpuffs are sheep like xenohumans, who can produce devilstrand cloth from their bodies. They are similar, but different to their wool counterparts. They lack the fire weakness their wool based cousins have, but are somewhat more aggressive in general. They can readily consume raw foods and are capable at crafting and social ability, likely to take advantage of the crafting materials they always have access to. Although they have very strong hooves, they aren't particularly great at combat, and though their fur does take an edge off any hits it still stings quite a bit.</description>
+    <descriptionShort>Devilpuffs are sheep like xenohumans, who can produce devilstrand cloth from their bodies. They lack the fire weakness their wool based cousins have, but are somewhat more aggressive in general. They can readily consume raw foods and are capable at crafting and social ability, likely to take advantage of the crafting materials they always have access to. Although they have very strong hooves, they aren't particularly great at combat, and though their fur does take an edge off any hits it still stings quite a bit.</descriptionShort>
+    <iconPath>UI/Xenotypes/Devilpuff</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>BTEMa_DevilWool</li>
+      <li>BTEMa_SheepEars</li>
+      <li>BTEMa_HeavyHooves</li>
+	  <li>StrongStomach</li>
+      <li>RobustDigestion</li>
+      <li>BTEMa_NoseSheep</li>
+      <li>BTEMa_Tail_Small</li>
+      <li>MeleeDamage_Weak</li>
+      <li>Hair_BrightRed</li>
+	  <li>Skin_SlateGray</li>
+      <li>WoundHealing_Slow</li>
+	  <li>Skin_SheerWhite</li>
+      <li>Furskin</li>
+      <li>Mood_Pessimist</li>
+      <li>AptitudeStrong_Crafting</li>
+      <li>AptitudeStrong_Social</li>
+	  <li>Aggression_Aggressive</li>
+      <li>Pain_Extra</li>
+      <li>NakedSpeed</li>
+      <li>AG_DevilsheepHorns</li>
+	  <li>Robust</li>
+    </genes>
+  </XenotypeDef>
+  
+  <XenotypeDef>
+    <defName>Blastheart</defName>
+    <label>blastheart</label>
+    <description>Blasthearts are a pitiable people; their germline is modelled after the boomalope. Born as chemfuel engines, they are cursed to bear unsightly cysts ever filling with chemfuel. Although genetically resistant to pain to make being chemtanks bearable, they are fearful of fire and combat, and exposure to either will quickly lead to a massive life threatening explosion, both for them and those around them. All these negative genes carry a few benefits in that their metabolism is highly efficient, and their chemfuel can be extracted at no harm to themselves. They are sickly, and need constant attention, but can eat anything and are innately familiar with medical works to sustain themselves. In a pinch, they can exhaust some chemfuel to make a smoke cloud.</description>
+    <descriptionShort>Blasthearts are a pitiable people; their germline is modelled after the boomalope. Born as chemfuel engines, they are cursed to bear unsightly cysts ever filling with chemfuel. Although genetically resistant to pain to make being chemtanks bearable, they are fearful of fire and combat, and exposure to either will quickly lead to a massive life threatening explosion, both for them and those around them. Their chemfuel can be extracted at no harm to themselves.</descriptionShort>
+    <iconPath>UI/Xenotypes/Blastheart</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>BTEMa_BovineEars</li>
+      <li>BTEMa_NoseCervine</li>
+      <li>BTEMa_HeavyHooves</li>
+	  <li>StrongStomach</li>
+      <li>RobustDigestion</li>
+      <li>BTEMa_Tail_Small</li>
+      <li>Hair_SandyBlonde</li>
+      <li>Hair_BaldOnly</li>
+	  <li>BTEMa_DeathBlast</li>
+      <li>WoundHealing_Slow</li>
+      <li>BTEMa_ChemPustules</li>
+      <li>BTEMa_ChemfuelGenerator</li>
+      <li>Furskin</li>
+      <li>Delicate</li>
+      <li>FireWeakness</li>
+      <li>Instability_Mild</li>
+      <li>AptitudeStrong_Medicine</li>
+      <li>AptitudePoor_Social</li>
+      <li>Pain_Reduced</li>
+      <li>BTEMa_SmokeExhaust</li>
+      <li>FireTerror</li>
+    </genes>
+  </XenotypeDef>
+  <!--
+  <XenotypeDef>
+    <defName>Sunscion</defName>
+    <label>sunscion</label>
+    <description>The sunscion are believed by tribes to be gifted protectors of the forest, blessed by the sun. These archite infused individuals are masters of the natural world and can survive practically any natural event, and are said to be able to bestow animalistic strength unto others. They are extremely vulnerable to toxins and pollution. They are a staple of mammalkin tribes and a source of religious reverence, and curiously do not seem to exist outside of them. As a result, practically all sunscion are some form of mammalkin xenohuman. They are easily identified by their gold eyes.</description>
+    <descriptionShort>Sunscion are masters of the natural world and can survive practically any natural event, and is said to be able to bestow animalistic strength unto others. They are extremely vulnerable to toxins and pollution.</descriptionShort>
+    <iconPath>UI/Xenotypes/Solarscion</iconPath>
+    <soundDefOnImplant>PawnBecameSanguophage</soundDefOnImplant>
+    <generateWithXenogermReplicatingHediffChance>0.5</generateWithXenogermReplicatingHediffChance>
+    <xenogermReplicatingDurationLeftDaysRange>0.1~140</xenogermReplicatingDurationLeftDaysRange>
+    <combatPowerFactor>2.5</combatPowerFactor>
+    <displayPriority>-1000</displayPriority>
+    <doubleXenotypeChances>
+      <Barkkin>0.34</Barkkin>
+      <Bonecrown>0.33</Bonecrown>
+      <Wiretail>0.33</Wiretail>
+    </doubleXenotypeChances>
+    <genes>
+      <li>AptitudeRemarkable_Plants</li>
+      <li>AptitudeRemarkable_Animals</li>
+	  <li>BTEMa_FatalToxWeakness</li>
+	  <li>BTEMa_BestowFangs</li>
+	  <li>BTEMa_Sundrinker</li>
+      <li>PsychicAbility_Enhanced</li>
+      <li>XenogermReimplanter</li>
+      <li>WoundHealing_SuperFast</li>
+      <li>ArchiteMetabolism</li>
+      <li>TotalHealing</li>
+      <li>DiseaseFree</li>
+      <li>MeleeDamage_Strong</li>
+      <li>Aggression_DeadCalm</li>
+	  <li>BTEMa_EyesGold</li>
+      <li>MaxTemp_LargeIncrease</li>
+      <li>MinTemp_LargeDecrease</li>
+    </genes>
+  </XenotypeDef>
+  -->
+</Defs>
