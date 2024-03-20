@@ -13,7 +13,7 @@ namespace BTE_MMLA
 			}
 		}
 
-		public override void Notify_PawnDied()
+		public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)
 		{
 			Corpse owner = this.parent.pawn.Corpse;
 			if (Props.damageType == null)

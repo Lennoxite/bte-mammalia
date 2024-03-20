@@ -33,7 +33,7 @@ namespace BTE_MMLA
 		public override void PostAdd()
 		{
 			base.PostAdd();
-			List<BodyPartRecord> hands = this.pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Jaw);
+			List<BodyPartRecord> hands = this.pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head);
 
 			foreach (BodyPartRecord hd in hands)
 			{
@@ -58,7 +58,7 @@ namespace BTE_MMLA
 					this.pawn.health.RemoveHediff(h);
 				}
 
-				List<BodyPartRecord> hands = this.pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Jaw);
+				List<BodyPartRecord> hands = this.pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head);
 
 				foreach (BodyPartRecord hd in hands)
 				{
