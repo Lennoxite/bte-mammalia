@@ -988,6 +988,17 @@
       </suffixSymbols>
     </symbolPack>
   </GeneDef>
+  <GeneDef ParentName="GeneJawBase">
+	<defName>BTEMa_SheepHead</defName>
+	<label>sheep head</label>
+	<description>Carriers of this gene have a soft sheep head.</description>
+	<iconPath>Genes/Icons/BTEMa_SheepHeadIcon</iconPath>
+	<forcedHeadTypes>
+	  <li>BTEMa_SheepHead</li>
+	</forcedHeadTypes>
+	<displayCategory>Mammalian</displayCategory>
+	<displayOrderInCategory>74</displayOrderInCategory>
+  </GeneDef>
   
 <!--Haytankers-->
 
@@ -1082,6 +1093,17 @@
     </symbolPack>
   </GeneDef>  
 
+  <GeneDef ParentName="GeneJawBase">
+	<defName>BTEMa_BovineHead</defName>
+	<label>bovine head</label>
+	<description>Carriers of this gene have a sturdy bovine head.</description>
+	<iconPath>Genes/Icons/BTEMa_BovineHeadIcon</iconPath>
+	<forcedHeadTypes>
+	  <li>BTEMa_BovineHead</li>
+	</forcedHeadTypes>
+	<displayCategory>Mammalian</displayCategory>
+	<displayOrderInCategory>83</displayOrderInCategory>
+  </GeneDef>
 <!--BLASTHEART-->
 
   <GeneDef>

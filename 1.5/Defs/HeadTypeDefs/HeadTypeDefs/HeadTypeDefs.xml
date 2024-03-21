@@ -56,5 +56,26 @@
     </requiredGenes>
     <eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest>
   </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BTEMa_BovineHead</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Genes/BovineHead/BovineHead</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <requiredGenes>
+      <li>BTEMa_BovineHead</li>
+    </requiredGenes>
+    <eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BTEMa_SheepHead</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Genes/SheepHead/SheepHead</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <requiredGenes>
+      <li>BTEMa_SheepHead</li>
+    </requiredGenes>
+    <eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest>
+  </HeadTypeDef>
 
 </Defs>

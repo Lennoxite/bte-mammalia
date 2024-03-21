@@ -198,7 +198,7 @@
 	  <li>BTEMa_ExcessMilkProduction</li>
       <li>BTEMa_FatalToxWeakness</li>
       <li>BTEMa_BovineEars</li>
-      <li>BTEMa_NoseBovine</li>
+      <li>BTEMa_BovineHead</li>
       <li>BTEMa_HeavyHooves</li>
       <li>BTE_BeardlessFurskin</li>
       <li>Beard_NoBeardOnly</li>
@@ -232,7 +232,7 @@
       <li>BTEMa_HeavyHooves</li>
 	  <li>StrongStomach</li>
       <li>RobustDigestion</li>
-      <li>BTEMa_NoseSheep</li>
+      <li>BTEMa_SheepHead</li>
       <li>Beard_NoBeardOnly</li>
       <li>BTEMa_Tail_Small</li>
       <li>MeleeDamage_Weak</li>
@@ -265,7 +265,7 @@
       <li>BTEMa_HeavyHooves</li>
 	  <li>StrongStomach</li>
       <li>RobustDigestion</li>
-      <li>BTEMa_NoseSheep</li>
+      <li>BTEMa_SheepHead</li>
       <li>BTEMa_Tail_Small</li>
       <li>MeleeDamage_Weak</li>
       <li>Hair_BrightRed</li>
