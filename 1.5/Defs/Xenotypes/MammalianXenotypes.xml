@@ -9,7 +9,7 @@
     <inheritable>true</inheritable>
     <genes>
       <li>DarkVision</li>
-      <li>BTEMa_Nose_Lupine</li> 
+      <li>BTEMa_LupineHead</li> 
       <li>BTEMa_SharpClaws</li>
       <li>Hair_Gray</li>
       <li>BTE_FeralMight</li>
@@ -17,6 +17,7 @@
       <li>AptitudePoor_Shooting</li>
       <li>VoiceRoar</li>
       <li>Ears_Floppy</li>
+      <li>Beard_NoBeardOnly</li>
       <li>BTEMa_VulpineEars</li>
       <li>KillThirst</li>
       <li>Aggression_Aggressive</li>
@@ -27,7 +28,7 @@
       <li>AptitudeStrong_Melee</li>
       <li>Tail_Furry</li>
       <li>BTEMa_Tail_Vulpine</li>
-      <li>Furskin</li>
+      <li>BTE_BeardlessFurskin</li>
       <li>Skin_SlateGray</li>
     </genes>
     <forbiddenWeaponClasses>
@@ -47,10 +48,11 @@
       <li>BTEMa_HeavyHooves</li> <!--Slow but strong blunt damage. High armor penetration.-->
 		<li>BTEMa_Antlers</li> <!--Grants headbutt ability. Stuns for a few seconds.-->
       <li>BTEMa_CervineEars</li>
-      <li>BTEMa_NoseCervine</li>
+      <li>BTEMa_CervineHead</li>
+      <li>Beard_NoBeardOnly</li>
       <li>BTEMa_Tail_Small</li>
       <li>Robust</li>
-      <li>Furskin</li>
+      <li>BTE_BeardlessFurskin</li>
       <li>MoveSpeed_Slow</li>
       <li>MinTemp_SmallIncrease</li>
       <li>MaxTemp_SmallDecrease</li>
@@ -70,10 +72,11 @@
       <li>BTEMa_SharpClaws</li>
 	<li>BTEMa_SensitiveWhiskers</li>
       <li>BTEMa_RatEars</li>
-      <li>BTEMa_NoseShort</li>
+      <li>BTEMa_RodentHead</li>
       <li>BTEMa_Tail_Rat</li>
+      <li>Beard_NoBeardOnly</li>
       <li>WoundHealing_Slow</li>
-      <li>Furskin</li>
+      <li>BTE_BeardlessFurskin</li>
       <li>MeleeDamage_Weak</li>
       <li>Pain_Extra</li>
 	  <li>MoveSpeed_Quick</li>
@@ -98,12 +101,13 @@
       <li>BTEMa_ElongatedFangs</li>
 	  <li>BTEMa_Farsighted</li>
       <li>BTEMa_BatEars</li>
-      <li>BTEMa_NoseBat</li>
+      <li>BTEMa_BatHead</li>
       <li>BTEMa_HideboundWings</li>
-      <li>Furskin</li>
+      <li>BTE_BeardlessFurskin</li>
 	  <li>Hair_DarkBrown</li>
 	  <li>MoveSpeed_Quick</li>
       <li>AptitudeStrong_Animals</li>
+      <li>Beard_NoBeardOnly</li>
       <li>AptitudeStrong_Cooking</li>
       <li>AptitudeTerrible_Medicine</li>
       <li>AptitudeTerrible_Intellectual</li>
@@ -131,7 +135,7 @@
       <li>Body_Hulk</li>
       <li>Beard_NoBeardOnly</li>
       <li>BTEMa_ElephantEars</li>
-      <li>BTEMa_NoseElephant</li>
+      <li>BTEMa_ElephantHead</li>
       <li>BTEMa_TailElephant</li>
 	  <li>MoveSpeed_Slow</li>
       <li>Pain_Reduced</li>
@@ -162,13 +166,14 @@
       <li>BTEMa_RabbitEarsStraight</li>
 	  <li>BTEMa_SensitiveWhiskers</li>
       <li>BTEMa_RabbitEarsLopped</li>
-      <li>BTEMa_NoseShort</li>
+      <li>BTEMa_RodentHead</li>
       <li>BTE_Herbivorous</li>
       <li>BTEMa_TailRabbit</li>
-      <li>Furskin</li>
+      <li>BTE_BeardlessFurskin</li>
       <li>MeleeDamage_Weak</li>
 	  <li>MoveSpeed_VeryQuick</li>
       <li>Hair_SnowWhite</li>
+      <li>Beard_NoBeardOnly</li>
 	  <li>Skin_SheerWhite</li>
 	  <li>BTEMa_RabbitsIntuition</li>
       <li>AptitudeRemarkable_Plants</li>
@@ -195,7 +200,8 @@
       <li>BTEMa_BovineEars</li>
       <li>BTEMa_NoseBovine</li>
       <li>BTEMa_HeavyHooves</li>
-      <li>Furskin</li>
+      <li>BTE_BeardlessFurskin</li>
+      <li>Beard_NoBeardOnly</li>
       <li>MeleeDamage_Strong</li>
       <li>BTEMa_TailElephant</li>
 	  <li>Hair_ReddishBrown</li>
@@ -227,13 +233,14 @@
 	  <li>StrongStomach</li>
       <li>RobustDigestion</li>
       <li>BTEMa_NoseSheep</li>
+      <li>Beard_NoBeardOnly</li>
       <li>BTEMa_Tail_Small</li>
       <li>MeleeDamage_Weak</li>
       <li>Hair_SnowWhite</li>
 	  <li>Skin_SlateGray</li>
       <li>WoundHealing_Slow</li>
 	  <li>Skin_SheerWhite</li>
-      <li>Furskin</li>
+      <li>BTE_BeardlessFurskin</li>
       <li>FireWeakness</li>
       <li>AptitudeStrong_Crafting</li>
       <li>AptitudeStrong_Social</li>
@@ -263,9 +270,10 @@
       <li>MeleeDamage_Weak</li>
       <li>Hair_BrightRed</li>
 	  <li>Skin_SlateGray</li>
+      <li>Beard_NoBeardOnly</li>
       <li>WoundHealing_Slow</li>
 	  <li>Skin_SheerWhite</li>
-      <li>Furskin</li>
+      <li>BTE_BeardlessFurskin</li>
       <li>Mood_Pessimist</li>
       <li>AptitudeStrong_Crafting</li>
       <li>AptitudeStrong_Social</li>
@@ -286,7 +294,7 @@
     <inheritable>true</inheritable>
     <genes>
       <li>BTEMa_BovineEars</li>
-      <li>BTEMa_NoseCervine</li>
+      <li>BTEMa_CervineHead</li>
       <li>BTEMa_HeavyHooves</li>
 	  <li>StrongStomach</li>
       <li>RobustDigestion</li>
@@ -296,8 +304,9 @@
 	  <li>BTEMa_DeathBlast</li>
       <li>WoundHealing_Slow</li>
       <li>BTEMa_ChemPustules</li>
+      <li>Beard_NoBeardOnly</li>
       <li>BTEMa_ChemfuelGenerator</li>
-      <li>Furskin</li>
+      <li>BTE_BeardlessFurskin</li>
       <li>Delicate</li>
       <li>FireWeakness</li>
       <li>Instability_Mild</li>

@@ -45,6 +45,8 @@
     </symbolPack>
   </GeneDef>
   
+
+  
   <GeneDef ParentName="GeneTailBase">
     <defName>BTEMa_Tail_Vulpine</defName>
     <label>vulpine tail</label>
@@ -112,6 +114,19 @@
     </renderNodeProperties>
     <displayCategory>Mammalian</displayCategory>
     <displayOrderInCategory>4</displayOrderInCategory>
+  </GeneDef>
+  
+
+  <GeneDef ParentName="GeneJawBase">
+	<defName>BTEMa_LupineHead</defName>
+	<label>lupine head</label>
+	<description>Carriers of this gene have a furry canine head.</description>
+	<iconPath>Genes/Icons/BTEMa_LupineHeadIcon</iconPath>
+	<forcedHeadTypes>
+	  <li>BTEMa_LupineHead</li>
+	</forcedHeadTypes>
+	<displayCategory>Mammalian</displayCategory>
+	<displayOrderInCategory>5</displayOrderInCategory>
   </GeneDef>
   
 	<!-- BONECROWN -->
@@ -285,6 +300,17 @@
       </suffixSymbols>
     </symbolPack>
   </GeneDef>
+  <GeneDef ParentName="GeneJawBase">
+	<defName>BTEMa_CervineHead</defName>
+	<label>cervine head</label>
+	<description>Carriers of this gene have a noble cervine head.</description>
+	<iconPath>Genes/Icons/BTEMa_CervineHeadIcon</iconPath>
+	<forcedHeadTypes>
+	  <li>BTEMa_CervineHead</li>
+	</forcedHeadTypes>
+	<displayCategory>Mammalian</displayCategory>
+	<displayOrderInCategory>15</displayOrderInCategory>
+  </GeneDef>
   
 <!--WIRETAIL-->
   	<GeneDef ParentName="GeneEarsBase">
@@ -385,21 +411,32 @@
             <layer>-2</layer>
           </defaultData>
           <dataNorth>
-            <offset>(0.1, 0.2, -0.25)</offset>
+            <offset>(0.1, 0, -0.25)</offset>
             <layer>90</layer>
           </dataNorth>
           <dataSouth>
-            <offset>(-0.1, -0.1, -0.25)</offset>
+            <offset>(-0.1, 0, -0.25)</offset>
           </dataSouth>
           <dataEast>
-            <offset>(-0.5, -0.1, -0.15)</offset>
+            <offset>(-0.5, 0, -0.15)</offset>
           </dataEast>
           <dataWest>
-            <offset>(0.5, -0.1, -0.15)</offset>
+            <offset>(0.5, 0, -0.15)</offset>
           </dataWest>
         </drawData>
       </li>
     </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="GeneJawBase">
+	<defName>BTEMa_RodentHead</defName>
+	<label>rodent head</label>
+	<description>Carriers of this gene have a wily rodent head.</description>
+	<iconPath>Genes/Icons/BTEMa_RodentHeadIcon</iconPath>
+	<forcedHeadTypes>
+	  <li>BTEMa_RodentHead</li>
+	</forcedHeadTypes>
+	<displayCategory>Mammalian</displayCategory>
+	<displayOrderInCategory>33</displayOrderInCategory>
   </GeneDef>
   
   <GeneDef ParentName="GeneToxResistBase">
@@ -551,6 +588,17 @@
     <biostatMet>-2</biostatMet>
     <biostatCpx>2</biostatCpx>
   </GeneDef>
+  <GeneDef ParentName="GeneJawBase">
+	<defName>BTEMa_BatHead</defName>
+	<label>bat head</label>
+	<description>Carriers of this gene have a sinister bat head.</description>
+	<iconPath>Genes/Icons/BTEMa_BatHeadIcon</iconPath>
+	<forcedHeadTypes>
+	  <li>BTEMa_BatHead</li>
+	</forcedHeadTypes>
+	<displayCategory>Mammalian</displayCategory>
+	<displayOrderInCategory>45</displayOrderInCategory>
+  </GeneDef>
   
   
 <!--SEERTUSK-->
@@ -701,6 +749,17 @@
       </li>
     </forcedTraits>
     <biostatMet>-1</biostatMet>
+  </GeneDef>
+  <GeneDef ParentName="GeneJawBase">
+	<defName>BTEMa_ElephantHead</defName>
+	<label>elephant head</label>
+	<description>Carriers of this gene have a wise elephant head.</description>
+	<iconPath>Genes/Icons/BTEMa_ElephantHeadIcon</iconPath>
+	<forcedHeadTypes>
+	  <li>BTEMa_ElephantHead</li>
+	</forcedHeadTypes>
+	<displayCategory>Mammalian</displayCategory>
+	<displayOrderInCategory>55</displayOrderInCategory>
   </GeneDef>
   
 <!--HINDHOPPER-->
