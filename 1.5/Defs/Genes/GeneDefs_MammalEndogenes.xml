@@ -876,7 +876,7 @@
   <GeneDef>
     <defName>BTEMa_RapidCoatGrowth</defName>
     <label>rapid coat growth</label>
-    <description>Carriers of this gene rapidly produce wool. This wool can be sheared every so often. The coat provides some protection from the elements.</description>
+    <description>Carriers of this gene rapidly produce wool. This wool is automatically sheared every so often. The coat provides some protection from the elements.</description>
     <geneClass>BTE.Gene_RapidCoatGrowth</geneClass>
     <iconPath>Genes/Icons/BTEMa_RapidCoatGrowthIcon</iconPath>
     <displayCategory>Mammalian</displayCategory>
@@ -900,7 +900,7 @@
   <GeneDef>
     <defName>BTEMa_DevilWool</defName>
     <label>devilstrand wool grower</label>
-    <description>Carriers of this gene rapidly produce devilstrand cloth. This wool can be sheared every 30 days for 30 bundles of devilstrand. The coat provides some protection from the elements.</description>
+    <description>Carriers of this gene rapidly produce devilstrand cloth. This wool is automatically sheared every 30 days for 30 bundles of devilstrand. The coat provides some protection from the elements.</description>
     <geneClass>BTE.Gene_RapidCoatGrowth</geneClass>
     <iconPath>Genes/Icons/BTEMa_DevilWoolIcon</iconPath>
     <displayCategory>Mammalian</displayCategory>
@@ -1005,7 +1005,7 @@
   <GeneDef>
     <defName>BTEMa_ExcessMilkProduction</defName>
     <label>excess milk production</label>
-    <description>Carriers of this gene constantly produce more milk than the carrier needs, even outside pregnancy. This milk can be milked out for other uses.</description>
+    <description>Carriers of this gene constantly produce more milk than the carrier needs, even outside pregnancy. This milk will be milked instantly and automatically by the pawn every so often.</description>
     <geneClass>BTE.Gene_ExcessMilkProduction</geneClass>
     <iconPath>Genes/Icons/BTEMa_ExcessMilkProductionIcon</iconPath>
     <displayCategory>Mammalian</displayCategory>
@@ -1109,7 +1109,7 @@
   <GeneDef>
     <defName>BTEMa_ChemfuelGenerator</defName>
     <label>chemfuel generator</label>
-    <description>Carriers of this gene produce chemfuel in their bodies. This naturally produced chemfuel can be extracted every day.</description>
+    <description>Carriers of this gene produce chemfuel in their bodies. This naturally produced chemfuel is automatically extracted every day.</description>
     <geneClass>BTE.Gene_ExcessMilkProduction</geneClass>
     <iconPath>Genes/Icons/BTEMa_ChemfuelProducerIcon</iconPath>
     <displayCategory>Mammalian</displayCategory>

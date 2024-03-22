@@ -73,12 +73,8 @@
     <Compile Include="Gene_HeavyHooves.cs" />
     <Compile Include="Gene_AddImplant.cs" />
     <Compile Include="HediffComp_ExplodeOnDeath.cs" />
-    <Compile Include="JobDriver_MilkPawn.cs" />
-    <Compile Include="JobDriver_ShearPawn.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WorkGiver_MilkPawn.cs" />
-    <Compile Include="WorkGiver_ShearPawn.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
