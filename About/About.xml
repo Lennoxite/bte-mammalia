@@ -22,10 +22,9 @@
 	<loadAfter>
 		<li>ludeon.rimworld.biotech</li>
 		<li>biotexpans.core</li>
-		<!-- <li>sarg.alphagenes</li> -->
 	</loadAfter>
 	<description>
-Adds genes inspired by contemporary terran mammals! Become a night predator or a peaceful herbivore, and so much more! Mod is a work in progress. Be on the look out for other biotech expansions!
+Adds genes inspired by contemporary terran mammals! Become a night predator or a peaceful herbivore, and so much more! Be on the look out for other biotech expansions!
 	</description>
 	<modIconPath IgnoreIfNoMatchingField="True">BiotechExpansionMammIcon</modIconPath>
 </ModMetaData>
