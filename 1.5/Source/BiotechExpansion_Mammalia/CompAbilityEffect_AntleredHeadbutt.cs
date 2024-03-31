@@ -45,10 +45,10 @@ namespace BTE_MMLA
 			{
 				return false;
 			}
-			if (!AbilityUtility.ValidateMustBeHumanOrWildMan(pawn, throwMessages, this.parent))
-			{
-				return false;
-			}
+			//if (!AbilityUtility.ValidateMustBeHumanOrWildMan(pawn, throwMessages, this.parent))
+			//{
+			//	return false;
+			//}
 
 			return true;
 		}

@@ -79,8 +79,8 @@
     <displayOrderInCategory>45</displayOrderInCategory>
     <statFactors>
 	
-      <ShootingAccuracyFactor_Short>0.9</ShootingAccuracyFactor_Short>
-      <ShootingAccuracyFactor_Long>1.2</ShootingAccuracyFactor_Long>
+      <ShootingAccuracyFactor_Short>0.975</ShootingAccuracyFactor_Short>
+      <ShootingAccuracyFactor_Long>1.05</ShootingAccuracyFactor_Long>
       <ShootingAccuracyFactor_Medium>1</ShootingAccuracyFactor_Medium>
     </statFactors>
     <biostatMet>-1</biostatMet>
