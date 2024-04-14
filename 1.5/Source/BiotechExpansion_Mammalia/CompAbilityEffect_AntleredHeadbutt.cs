@@ -19,17 +19,11 @@ namespace BTE_MMLA
 		public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
 		{
 			base.Apply(target, dest);
-			Pawn pawn = target.Pawn;
-			if (pawn == null)
-			{
-				return;
-			}
-			//DamageWorker_Stun atk = new DamageWorker_Stun();
-			DamageInfo dif = new DamageInfo(DamageDefOf.Stun, 15, 1, -1, this.parent.pawn);
-
-			//atk.Apply(dif, pawn);
-			pawn.TakeDamage(dif);
-		}
+            if (target.Thing is Pawn pawn)
+            {
+                pawn.stances.stunner.StunFor(8f.SecondsToTicks(), parent.pawn, addBattleLog: false);
+            }
+        }
 
 
 		public override bool CanApplyOn(LocalTargetInfo target, LocalTargetInfo dest)
