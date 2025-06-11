@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<AbilityDef ParentName="AbilityTouchBase">
+    <defName>BTEMa_AntleredHeadbutt</defName>
+    <label>antlered headbutt</label>
+    <description>Rear back and slam against the target with a mighty headbutt. The resulting impact will stun the victim for a few seconds.</description>
+    <iconPath>Genes/Icons/BTEMa_AntlerIcon</iconPath>
+    <cooldownTicksRange>5000</cooldownTicksRange>
+    <stunTargetWhileCasting>false</stunTargetWhileCasting>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <range>-1</range>
+      <warmupTime>1</warmupTime>
+      <soundCast>MeleeHit_BionicPunch</soundCast>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>true</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BTE_MMLA.CompProperties_AbilityAntleredHeadbutt">
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <!--<AbilityDef>
+    <defName>BTEMa_BestowFangs</defName>
+    <label>bestow fangs</label>
+    <description>Inject a temporary and fast acting mutation serum into the target, causing razor teeth to grow from their jaw and granting them the ferocity of a wild beast.</description>
+    <charges>3</charges>
+    <iconPath>Genes/Icons/BTEMa_BestowFangsIcon</iconPath>
+    <cooldownTicksRange>60000</cooldownTicksRange>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+    <displayOrder>600</displayOrder>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <range>15</range>
+      <warmupTime>2</warmupTime>
+      <soundCast>FireSpew_Resolve</soundCast>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetCorpses>false</canTargetCorpses>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <severity>1</severity>
+        <hediffDef>BTEMa_FerociousRazorTeeth</hediffDef>
+		<compClass>CompAbilityEffect_GiveHediff</compClass>
+		<onlyBrain>true</onlyBrain>
+		<replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+  </AbilityDef>-->
+  
+  <AbilityDef Name="BTEMa_HideBoundLeap">
+    <defName>BTEMa_HideBoundLeap</defName>
+    <label>hidebound leap</label>
+    <description>Hop to a nearby location using hidebound wings.</description>
+    <iconPath>Genes/Icons/BTEMa_HideboundWingsIcon</iconPath>
+    <cooldownTicksRange>7500</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityJump</verbClass>
+      <label>jump</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>1</warmupTime>
+      <range>8.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <!--<comps>
+    </comps>-->
+  </AbilityDef>
+  
+  <AbilityDef>
+    <defName>BTEMa_PsychicFuryNeedle</defName>
+    <label>psychic fury needle</label>
+    <description>Blast a mental needle into the mind of a target, driving them berserk. This is less elegant than a psychic lance, and thus vastly more likely of inflicting brain damage, and does not affect mechanoids.</description>
+    <charges>1</charges>
+    <iconPath>Genes/Icons/BTEMa_PsychicFuryNeedleIcon</iconPath>
+    <cooldownTicksRange>900000</cooldownTicksRange> <!-- once per quadrum ability -->
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+    <displayOrder>600</displayOrder>
+    <aiCanUse>false</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <range>15</range>
+      <warmupTime>2</warmupTime>
+      <soundCast>FireSpew_Resolve</soundCast>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetCorpses>false</canTargetCorpses>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <statBases>
+      <Ability_Duration>500</Ability_Duration>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AbilityGiveMentalState">
+        <stateDef>Berserk</stateDef>
+        <stateDefForMechs>BerserkMechanoid</stateDefForMechs>
+		<durationMultiplier>PsychicSensitivity</durationMultiplier>
+		<excludeNPCFactions>false</excludeNPCFactions>
+		<compClass>CompAbilityEffect_GiveMentalState</compClass>
+		<goodwillImpact>-75</goodwillImpact>
+		<psychic>true</psychic>
+      </li>
+      <li Class="CompProperties_AbilityBrainDamageChance">
+        <brainDamageChance>0.66</brainDamageChance>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <AbilityDef>
+    <defName>BTEMa_SmokeExhaust</defName>
+    <label>smoke exhaust</label>
+    <description>Ignite small chemfuel pockets in the throat, releasing a burst of blinding smoke.</description>
+    <jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
+    <iconPath>Genes/Icons/BTEMa_SmokeExhaustIcon</iconPath>
+    <cooldownTicksRange>10000</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+    <targetRequired>false</targetRequired>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <showCastingProgressBar>true</showCastingProgressBar>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>1</warmupTime>
+      <requireLineOfSight>false</requireLineOfSight>
+      <range>5</range>
+      <drawAimPie>false</drawAimPie>      
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilitySmokepop">
+        <smokeRadius>5</smokeRadius>
+      </li>	
+    </comps>
+  </AbilityDef> 
+</Defs>

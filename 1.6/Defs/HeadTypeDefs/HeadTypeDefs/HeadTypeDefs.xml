@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BTEMa_LupineHead</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Genes/CanineHead/CanineHead</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <requiredGenes>
+      <li>BTEMa_LupineHead</li>
+    </requiredGenes>
+    <eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BTEMa_CervineHead</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Genes/CervineHead/CervineHead</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <requiredGenes>
+      <li>BTEMa_CervineHead</li>
+    </requiredGenes>
+    <eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest>
+  </HeadTypeDef>
+  
+  
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BTEMa_RodentHead</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Genes/RodentHead/RodentHead</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <requiredGenes>
+      <li>BTEMa_RodentHead</li>
+    </requiredGenes>
+    <eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BTEMa_BatHead</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Genes/BatHead/BatHead</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <requiredGenes>
+      <li>BTEMa_BatHead</li>
+    </requiredGenes>
+    <eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BTEMa_ElephantHead</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Genes/ElephantHead/ElephantHead</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <requiredGenes>
+      <li>BTEMa_ElephantHead</li>
+    </requiredGenes>
+    <eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BTEMa_BovineHead</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Genes/BovineHead/BovineHead</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <requiredGenes>
+      <li>BTEMa_BovineHead</li>
+    </requiredGenes>
+    <eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>BTEMa_SheepHead</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Genes/SheepHead/SheepHead</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <requiredGenes>
+      <li>BTEMa_SheepHead</li>
+    </requiredGenes>
+    <eyeOffsetEastWest>(0.15, 0, 0.175)</eyeOffsetEastWest>
+  </HeadTypeDef>
+
+</Defs>

@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--BARKKIN-->
+  <GeneDef ParentName="GeneNoseBase">
+    <defName>BTEMa_Nose_Lupine</defName>
+    <label>lupine nose</label>
+    <description>Carriers of this gene have dog-like snouts.</description>
+    <iconPath>Genes/Icons/BTEMa_LupineSnoutIcon</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/LupineNose/LupineNose</texPath>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <colorType>Skin</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>66</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>lupine</symbol></li>
+        <li><symbol>snout</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>lupine</symbol></li>
+        <li><symbol>snout</symbol></li>
+        <li><symbol>nose</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+
+  
+  <GeneDef ParentName="GeneTailBase">
+    <defName>BTEMa_Tail_Vulpine</defName>
+    <label>vulpine tail</label>
+    <description>Carriers of this gene grow a fox like tail. It provides some warmth.</description>
+    <iconPath>Genes/Icons/BTEMa_VulpineTailIcon</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>3</displayOrderInCategory>
+    <displayCategory>Mammalian</displayCategory>
+    <statOffsets>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+	<renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Things/Pawn/Humanlike/BodyAttachments/VulpineTail/VulpineTail</texPath>
+        <colorType>Hair</colorType>
+        <overrideMeshSize>(1, 1)</overrideMeshSize>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>-2</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0.1, 0.2, -0.25)</offset>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0.1, -0.1, -0.25)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.5, -0.1, -0.15)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.5, -0.1, -0.15)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  	<GeneDef ParentName="GeneEarsBase">
+	<defName>BTEMa_VulpineEars</defName>
+	<label>vulpine ears</label>
+	<description>Carriers of this gene have two fox like ears instead of human ears.</description>
+	<iconPath>Genes/Icons/BTEMa_VulpineEarsIcon</iconPath>    
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/VulpineEars/VulpineEars</texPath>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>4</displayOrderInCategory>
+  </GeneDef>
+  
+
+  <GeneDef ParentName="GeneJawBase">
+	<defName>BTEMa_LupineHead</defName>
+	<label>lupine head</label>
+	<description>Carriers of this gene have a furry canine head.</description>
+	<iconPath>Genes/Icons/BTEMa_LupineHeadIcon</iconPath>
+	<forcedHeadTypes>
+	  <li>BTEMa_LupineHead</li>
+	</forcedHeadTypes>
+	<displayCategory>Mammalian</displayCategory>
+	<displayOrderInCategory>5</displayOrderInCategory>
+  </GeneDef>
+  
+	<!-- BONECROWN -->
+	<GeneDef ParentName="GeneHeadboneBase">
+	<defName>BTEMa_Antlers</defName>
+	<label>antlers</label>
+	<description>Carriers of this gene grow two antlers on their forehead. They may attempt to headbutt a target, stunning them for a few seconds.</description>
+	<iconPath>Genes/Icons/BTEMa_AntlerIcon</iconPath>
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <!-- <colorType>Skin</colorType> -->
+		<color>(255, 255, 255)</color>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/Antlers/Antlers</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>10</layer>
+          </dataNorth>
+          <dataEast>
+		  <offset>(0, 0, 0.1)</offset>
+          </dataEast>
+          <dataSouth>
+		  <offset>(0, 1, 0.1)</offset>
+          </dataSouth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>11</displayOrderInCategory>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMa_AntleredHeadbutt</AbilityDef>
+    </descriptionHyperlinks>
+	<symbolPack>
+	  <prefixSymbols>
+		<li><symbol>horn</symbol></li>
+		<li><symbol>knob</symbol></li>
+		<li><symbol>spike</symbol></li>
+		<li><symbol>devil</symbol></li>
+		<li><symbol>demon</symbol></li>
+		<li><symbol>luci</symbol></li>
+		<li><symbol>beelze</symbol></li>
+		<li><symbol>hell</symbol></li>
+	  </prefixSymbols>
+	  <suffixSymbols>
+		<li><symbol>horn</symbol></li>
+		<li><symbol>spike</symbol></li>
+		<li><symbol>vil</symbol></li>
+	  </suffixSymbols>
+	</symbolPack>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <abilities>
+      <li>BTEMa_AntleredHeadbutt</li>
+    </abilities>
+  </GeneDef>
+  
+  	<GeneDef ParentName="GeneEarsBase">
+	<defName>BTEMa_CervineEars</defName>
+	<label>cervine ears</label>
+	<description>Carriers of this gene have two deer like ears instead of human ears.</description>
+	<iconPath>Genes/Icons/BTEMa_CervineEarsIcon</iconPath>  
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CervineEars/CervineEars</texPath>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>12</displayOrderInCategory>
+  </GeneDef>
+	
+  <GeneDef ParentName="GeneTailBase">
+    <defName>BTEMa_Tail_Small</defName>
+    <label>small tail</label>
+    <description>Carriers of this gene grow a small fluffy tail.</description>
+    <iconPath>Genes/Icons/BTEMa_SmallTailIcon</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>13</displayOrderInCategory>
+    <displayCategory>Mammalian</displayCategory>
+    <biostatCpx>0</biostatCpx>
+	<renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Things/Pawn/Humanlike/BodyAttachments/SmallTail/SmallTail</texPath>
+        <colorType>Hair</colorType>
+        <overrideMeshSize>(1, 1)</overrideMeshSize>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>-2</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0.1, 0.2, -0.25)</offset>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0.1, -0.1, -0.25)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.6, -0.1, -0.15)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.6, -0.1, -0.15)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+
+  <GeneDef ParentName="GeneNoseBase">
+    <defName>BTEMa_NoseCervine</defName>
+    <label>cervine nose</label>
+    <description>Carriers of this gene have deer-like snouts.</description>
+    <iconPath>Genes/Icons/BTEMa_CervineSnoutIcon</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CervineNose/CervineNose</texPath>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <colorType>Skin</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>66</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>14</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>snout</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>snout</symbol></li>
+        <li><symbol>nose</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  <GeneDef ParentName="GeneJawBase">
+	<defName>BTEMa_CervineHead</defName>
+	<label>cervine head</label>
+	<description>Carriers of this gene have a noble cervine head.</description>
+	<iconPath>Genes/Icons/BTEMa_CervineHeadIcon</iconPath>
+	<forcedHeadTypes>
+	  <li>BTEMa_CervineHead</li>
+	</forcedHeadTypes>
+	<displayCategory>Mammalian</displayCategory>
+	<displayOrderInCategory>15</displayOrderInCategory>
+  </GeneDef>
+  
+<!--WIRETAIL-->
+  	<GeneDef ParentName="GeneEarsBase">
+	<defName>BTEMa_RatEars</defName>
+	<label>rat ears</label>
+	<description>Carriers of this gene have two rat like ears instead of human ears.</description>
+	<iconPath>Genes/Icons/BTEMa_RatEarsIcon</iconPath>
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/RatEars/RatEars</texPath>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>30</displayOrderInCategory>
+  </GeneDef>
+  
+   <GeneDef ParentName="GeneNoseBase">
+    <defName>BTEMa_NoseShort</defName>
+    <label>short nose</label>
+    <description>Carriers of this gene have a short, generic snout.</description>
+    <iconPath>Genes/Icons/BTEMa_ShortSnoutIcon</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/ShortNose/ShortNose</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <colorType>Skin</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <drawData>
+          <defaultData>
+            <layer>66</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>31</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>snout</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>snout</symbol></li>
+        <li><symbol>nose</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneTailBase">
+    <defName>BTEMa_Tail_Rat</defName>
+    <label>rat tail</label>
+    <description>Carriers of this gene grow a rat tail.</description>
+    <iconPath>Genes/Icons/BTEMa_RatTailIcon</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>32</displayOrderInCategory>
+    <displayCategory>Mammalian</displayCategory>
+    <capMods>
+      <li>
+        <capacity>Manipulation</capacity>
+        <offset>0.05</offset>
+      </li>
+    </capMods>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+	<renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Things/Pawn/Humanlike/BodyAttachments/RatTail/RatTail</texPath>
+		<color>(255, 255, 255)</color>
+        <overrideMeshSize>(1, 1)</overrideMeshSize>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>-2</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0.1, 0, -0.25)</offset>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0.1, 0, -0.25)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.5, 0, -0.15)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.5, 0, -0.15)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+  <GeneDef ParentName="GeneJawBase">
+	<defName>BTEMa_RodentHead</defName>
+	<label>rodent head</label>
+	<description>Carriers of this gene have a wily rodent head.</description>
+	<iconPath>Genes/Icons/BTEMa_RodentHeadIcon</iconPath>
+	<forcedHeadTypes>
+	  <li>BTEMa_RodentHead</li>
+	</forcedHeadTypes>
+	<displayCategory>Mammalian</displayCategory>
+	<displayOrderInCategory>33</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneToxResistBase">
+    <defName>BTEMa_FatalToxWeakness</defName>
+    <label>fatal tox weakness</label>
+    <labelShortAdj>tox-vulnerable</labelShortAdj>
+    <description>Carriers of this gene are drastically vulnerable to pollution, toxic fallout, and other toxic sources. Exposure to such things will rapidly kill the carrier.</description>
+    <iconPath>Genes/Icons/BTEMa_FatalToxWeaknessIcon</iconPath>
+    <displayOrderInCategory>91</displayOrderInCategory>
+    <displayCategory>Mammalian</displayCategory>
+    <statOffsets>
+      <ToxicResistance>-2</ToxicResistance>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>5</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>tox</symbol>
+          <weight>3</weight>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+<!--HIDEWING-->
+
+  <GeneDef ParentName="GeneNoseBase">
+    <defName>BTEMa_NoseBat</defName>
+    <label>bat nose</label>
+    <description>Carriers of this gene have bat-like snouts.</description>
+    <iconPath>Genes/Icons/BTEMa_BatSnoutIcon</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/BatNose/BatNose</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <colorType>Skin</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <drawData>
+          <defaultData>
+            <layer>66</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>41</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>snout</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>snout</symbol></li>
+        <li><symbol>nose</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  	<GeneDef ParentName="GeneEarsBase">
+	<defName>BTEMa_BatEars</defName>
+	<label>bat ears</label>
+	<description>Carriers of this gene have two bat-like ears instead of human ears.</description>
+	<iconPath>Genes/Icons/BTEMa_BatEarsIcon</iconPath>
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/BatEars/BatEars</texPath>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>42</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>BTEMa_HideboundWings</defName>
+    <label>hidebound wings</label>
+    <description>Carriers have large skin membrane wings connected to their arms. They may use these to hop a short distance every once in a while, and they protect from the elements somewhat. They are rather cumbersome and make it hard to perform some dextrous tasks, however.</description>
+    <iconPath>Genes/Icons/BTEMa_HideboundWingsIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>44</displayOrderInCategory>
+    <statOffsets>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+      <ComfyTemperatureMax>5</ComfyTemperatureMax>
+    </statOffsets>
+    <abilities>
+      <li>BTEMa_HideBoundLeap</li>
+    </abilities>
+    <capMods>
+      <li>
+        <capacity>Manipulation</capacity>
+        <offset>-0.05</offset>
+      </li>
+    </capMods>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMa_HideBoundLeap</AbilityDef>
+    </descriptionHyperlinks>
+	<renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Things/Pawn/Humanlike/BodyAttachments/HideboundWings/HideboundWings</texPath>
+		<colorType>Skin</colorType>
+		<color>(255, 255, 255)</color>
+        <overrideMeshSize>(1, 1)</overrideMeshSize>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>-2</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0, 0.2, -0.05)</offset>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+            <offset>(0, -0.1, -0.05)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.5, -0.1, -0.05)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(0.5, -0.1, -0.05)</offset>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <biostatMet>-2</biostatMet>
+    <biostatCpx>2</biostatCpx>
+  </GeneDef>
+  <GeneDef ParentName="GeneJawBase">
+	<defName>BTEMa_BatHead</defName>
+	<label>bat head</label>
+	<description>Carriers of this gene have a sinister bat head.</description>
+	<iconPath>Genes/Icons/BTEMa_BatHeadIcon</iconPath>
+	<forcedHeadTypes>
+	  <li>BTEMa_BatHead</li>
+	</forcedHeadTypes>
+	<displayCategory>Mammalian</displayCategory>
+	<displayOrderInCategory>45</displayOrderInCategory>
+  </GeneDef>
+  
+  
+<!--SEERTUSK-->
+  <GeneDef ParentName="GeneNoseBase">
+    <defName>BTEMa_NoseElephant</defName>
+    <label>elephant nose</label>
+    <description>Carriers of this gene have an elephant trunk and tusks. The trunk is prehensile, improving the carrier's manipulation.</description>
+    <iconPath>Genes/Icons/BTEMa_ElephantSnoutIcon</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/ElephantNose/ElephantNose</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <colorType>Skin</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <drawData>
+          <defaultData>
+            <layer>66</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>50</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>snout</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>snout</symbol></li>
+        <li><symbol>nose</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <capMods>
+      <li>
+        <capacity>Manipulation</capacity>
+        <offset>0.1</offset>
+      </li>
+    </capMods>
+  </GeneDef>
+  
+  	<GeneDef ParentName="GeneEarsBase">
+	<defName>BTEMa_ElephantEars</defName>
+	<label>elephant ears</label>
+	<description>Carriers of this gene have two elephant like ears instead of human ears.</description>
+	<iconPath>Genes/Icons/BTEMa_ElephantEarsIcon</iconPath>
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/ElephantEars/ElephantEars</texPath>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>51</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneTailBase">
+    <defName>BTEMa_TailElephant</defName>
+    <label>whip tail</label>
+    <description>Carriers of this gene grow a whip like tail with a tuft at the end.</description>
+    <iconPath>Genes/Icons/BTEMa_ElephantTailIcon</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>52</displayOrderInCategory>
+    <displayCategory>Mammalian</displayCategory>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+	<renderNodeProperties>
+		  <li>
+			<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+			<texPath>Things/Pawn/Humanlike/BodyAttachments/ElephantTail/ElephantTail</texPath>
+			<colorType>Skin</colorType>
+			<overrideMeshSize>(1, 1)</overrideMeshSize>
+			<parentTagDef>Body</parentTagDef>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+			  <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+			  <defaultData>
+				<layer>-2</layer>
+			  </defaultData>
+			  <dataNorth>
+				<offset>(0.1, 0.2, -0.25)</offset>
+				<layer>90</layer>
+			  </dataNorth>
+			  <dataSouth>
+				<offset>(-0.1, -0.1, -0.25)</offset>
+			  </dataSouth>
+			  <dataEast>
+				<offset>(-0.5, -0.1, -0.15)</offset>
+			  </dataEast>
+			  <dataWest>
+				<offset>(0.5, -0.1, -0.15)</offset>
+			  </dataWest>
+			</drawData>
+		  </li>
+		</renderNodeProperties>
+  </GeneDef>
+  
+	<GeneDef>
+	<defName>BTEMa_PsychicFuryNeedle</defName>
+	<label>psychic fury needle</label>
+	<description>Carriers of this gene can blast a mental needle into the mind of a target, driving them berserk. This is less elegant than a psychic lance, and thus is vastly more likely to inflict brain damage and is ineffective against mechanoids.</description>
+	<iconPath>Genes/Icons/BTEMa_PsychicFuryNeedleIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>53</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <abilities>
+      <li>BTEMa_PsychicFuryNeedle</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMa_PsychicFuryNeedle</AbilityDef>
+    </descriptionHyperlinks>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>BTEMa_ElephantMemory</defName>
+    <label>elephant memory</label>
+    <description>Carriers of this gene have incredible recollection abilities, reducing skill loss by half.</description>
+    <iconPath>Genes/Icons/BTEMa_ElephantMemoryIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>54</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>GreatMemory</def>
+      </li>
+    </forcedTraits>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+  <GeneDef ParentName="GeneJawBase">
+	<defName>BTEMa_ElephantHead</defName>
+	<label>elephant head</label>
+	<description>Carriers of this gene have a wise elephant head.</description>
+	<iconPath>Genes/Icons/BTEMa_ElephantHeadIcon</iconPath>
+	<forcedHeadTypes>
+	  <li>BTEMa_ElephantHead</li>
+	</forcedHeadTypes>
+	<displayCategory>Mammalian</displayCategory>
+	<displayOrderInCategory>55</displayOrderInCategory>
+  </GeneDef>
+  
+<!--HINDHOPPER-->
+  <GeneDef>
+    <defName>BTEMa_RabbitsIntuition</defName>
+    <label>forager's intuition</label>
+    <description>Carriers of this gene excel in growing and foraging plants. Do note that a different mod is needed to make harvest yield do anything above 100%.</description>
+    <iconPath>Genes/Icons/BTEMa_RabbitsIntuitionIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>63</displayOrderInCategory>
+    <statOffsets>
+      <PlantHarvestYield>0.25</PlantHarvestYield>
+	  <PlantWorkSpeed>0.25</PlantWorkSpeed>
+	  <PruningSpeed MayRequire="Ludeon.RimWorld.Ideology">0.25</PruningSpeed>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+  
+  	<GeneDef ParentName="GeneEarsBase">
+	<defName>BTEMa_RabbitEarsStraight</defName>
+	<label>straight rabbit ears</label>
+	<description>Carriers of this gene have two rabbit like ears instead of human ears.</description>
+	<iconPath>Genes/Icons/BTEMa_RabbitEarsStraightIcon</iconPath>
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/RabbitEarsStraight/RabbitEarsStraight</texPath>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>61</displayOrderInCategory>
+  </GeneDef>
+  
+  	<GeneDef ParentName="GeneEarsBase">
+	<defName>BTEMa_RabbitEarsLopped</defName>
+	<label>lopped rabbit ears</label>
+	<description>Carriers of this gene have two rabbit like ears instead of human ears.</description>
+	<iconPath>Genes/Icons/BTEMa_RabbitEarsLoppedIcon</iconPath>
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/RabbitEarsLopped/RabbitEarsLopped</texPath>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>62</displayOrderInCategory>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneTailBase">
+    <defName>BTEMa_TailRabbit</defName>
+    <label>rabbit tail</label>
+    <description>Carriers of this gene grow a rabbit like tail.</description>
+    <iconPath>Genes/Icons/BTEMa_RabbitTailIcon</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <displayOrderInCategory>60</displayOrderInCategory>
+    <displayCategory>Mammalian</displayCategory>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+	<renderNodeProperties>
+		  <li>
+			<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+			<texPath>Things/Pawn/Humanlike/BodyAttachments/RabbitTail/RabbitTail</texPath>
+			<colorType>Hair</colorType>
+			<overrideMeshSize>(1, 1)</overrideMeshSize>
+			<parentTagDef>Body</parentTagDef>
+			<rotDrawMode>Fresh, Rotting</rotDrawMode>
+			<drawData>
+			  <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+			  <defaultData>
+				<layer>-2</layer>
+			  </defaultData>
+			  <dataNorth>
+				<offset>(0.1, 0.2, -0.25)</offset>
+				<layer>90</layer>
+			  </dataNorth>
+			  <dataSouth>
+				<offset>(-0.1, -0.1, -0.25)</offset>
+			  </dataSouth>
+			  <dataEast>
+				<offset>(-0.6, -0.1, -0.15)</offset>
+			  </dataEast>
+			  <dataWest>
+				<offset>(0.6, -0.1, -0.15)</offset>
+			  </dataWest>
+			</drawData>
+		  </li>
+		</renderNodeProperties>
+  </GeneDef>
+  
+  <!--Cloudpuffs-->
+  <GeneDef>
+    <defName>BTEMa_RapidCoatGrowth</defName>
+    <label>rapid coat growth</label>
+    <description>Carriers of this gene rapidly produce wool. This wool is automatically sheared every so often. The coat provides some protection from the elements.</description>
+    <geneClass>BTE.Gene_RapidCoatGrowth</geneClass>
+    <iconPath>Genes/Icons/BTEMa_RapidCoatGrowthIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>70</displayOrderInCategory>
+	<modExtensions>
+		<li Class="BTE.GeneMaterialProduced">
+			<produces>WoolSheep</produces>
+			<intervalDays>10</intervalDays>
+			<amount>45</amount>
+		</li>
+	</modExtensions>
+    <statOffsets>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+      <ComfyTemperatureMax>5</ComfyTemperatureMax>
+    </statOffsets>
+    <minAgeActive>13</minAgeActive>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef> 
+  
+  <GeneDef>
+    <defName>BTEMa_DevilWool</defName>
+    <label>devilstrand wool grower</label>
+    <description>Carriers of this gene rapidly produce devilstrand cloth. This wool is automatically sheared every 30 days for 30 bundles of devilstrand. The coat provides some protection from the elements.</description>
+    <geneClass>BTE.Gene_RapidCoatGrowth</geneClass>
+    <iconPath>Genes/Icons/BTEMa_DevilWoolIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>73</displayOrderInCategory>
+	<modExtensions>
+		<li Class="BTE.GeneMaterialProduced">
+			<produces>DevilstrandCloth</produces>
+			<intervalDays>30</intervalDays>
+			<amount>30</amount>
+		</li>
+	</modExtensions>
+    <statOffsets>
+      <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+      <ComfyTemperatureMax>5</ComfyTemperatureMax>
+    </statOffsets>
+    <minAgeActive>13</minAgeActive>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-4</biostatMet>
+  </GeneDef>
+  
+  	<GeneDef ParentName="GeneEarsBase">
+	<defName>BTEMa_SheepEars</defName>
+	<label>sheep ears</label>
+	<description>Carriers of this gene have two sheep-like ears instead of human ears.</description>
+	<iconPath>Genes/Icons/BTEMa_SheepEarsIcon</iconPath>
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/SheepEars/SheepEars</texPath>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>71</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneNoseBase">
+    <defName>BTEMa_NoseSheep</defName>
+    <label>sheep nose</label>
+    <description>Carriers of this gene have sheep-like snouts.</description>
+    <iconPath>Genes/Icons/BTEMa_SheepSnoutIcon</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/SheepNose/SheepNose</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <colorType>Skin</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <drawData>
+          <defaultData>
+            <layer>66</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>72</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>snout</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>snout</symbol></li>
+        <li><symbol>nose</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  <GeneDef ParentName="GeneJawBase">
+	<defName>BTEMa_SheepHead</defName>
+	<label>sheep head</label>
+	<description>Carriers of this gene have a soft sheep head.</description>
+	<iconPath>Genes/Icons/BTEMa_SheepHeadIcon</iconPath>
+	<forcedHeadTypes>
+	  <li>BTEMa_SheepHead</li>
+	</forcedHeadTypes>
+	<displayCategory>Mammalian</displayCategory>
+	<displayOrderInCategory>74</displayOrderInCategory>
+  </GeneDef>
+  
+<!--Haytankers-->
+
+  <GeneDef>
+    <defName>BTEMa_ExcessMilkProduction</defName>
+    <label>excess milk production</label>
+    <description>Carriers of this gene constantly produce more milk than the carrier needs, even outside pregnancy. This milk will be milked instantly and automatically by the pawn every so often.</description>
+    <geneClass>BTE.Gene_ExcessMilkProduction</geneClass>
+    <iconPath>Genes/Icons/BTEMa_ExcessMilkProductionIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>82</displayOrderInCategory>
+	<modExtensions>
+		<li Class="BTE.GeneMaterialProduced">
+			<produces>Milk</produces>
+			<intervalDays>1</intervalDays>
+			<amount>14</amount>
+		</li>
+	</modExtensions>
+    <minAgeActive>18</minAgeActive>
+    <exclusionTags>
+      <li>Milk</li>
+    </exclusionTags>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  	<GeneDef ParentName="GeneEarsBase">
+	<defName>BTEMa_BovineEars</defName>
+	<label>bovine ears</label>
+	<description>Carriers of this gene have two bovine-like ears instead of human ears.</description>
+	<iconPath>Genes/Icons/BTEMa_BovineEarsIcon</iconPath>
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <colorType>Skin</colorType>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/BovineEars/BovineEars</texPath>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>81</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneNoseBase">
+    <defName>BTEMa_NoseBovine</defName>
+    <label>bovine nose</label>
+    <description>Carriers of this gene have bovine-like snouts.</description>
+    <iconPath>Genes/Icons/BTEMa_BovineSnoutIcon</iconPath>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/BovineNose/BovineNose</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <colorType>Skin</colorType>
+        <parentTagDef>Head</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <visibleFacing>
+          <li>East</li>
+          <li>South</li>
+          <li>West</li>
+        </visibleFacing>
+        <drawData>
+          <defaultData>
+            <layer>66</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>80</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>snout</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>snout</symbol></li>
+        <li><symbol>nose</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>  
+
+  <GeneDef ParentName="GeneJawBase">
+	<defName>BTEMa_BovineHead</defName>
+	<label>bovine head</label>
+	<description>Carriers of this gene have a sturdy bovine head.</description>
+	<iconPath>Genes/Icons/BTEMa_BovineHeadIcon</iconPath>
+	<forcedHeadTypes>
+	  <li>BTEMa_BovineHead</li>
+	</forcedHeadTypes>
+	<displayCategory>Mammalian</displayCategory>
+	<displayOrderInCategory>83</displayOrderInCategory>
+  </GeneDef>
+<!--BLASTHEART-->
+
+  <GeneDef>
+    <defName>BTEMa_ChemfuelGenerator</defName>
+    <label>chemfuel generator</label>
+    <description>Carriers of this gene produce chemfuel in their bodies. This naturally produced chemfuel is automatically extracted every day.</description>
+    <geneClass>BTE.Gene_ExcessMilkProduction</geneClass>
+    <iconPath>Genes/Icons/BTEMa_ChemfuelProducerIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>90</displayOrderInCategory>
+	<modExtensions>
+		<li Class="BTE.GeneMaterialProduced">
+			<produces>Chemfuel</produces>
+			<intervalDays>1</intervalDays>
+			<amount>11</amount>
+		</li>
+	</modExtensions>
+    <exclusionTags>
+      <li>Milk</li>
+    </exclusionTags>
+    <minAgeActive>18</minAgeActive>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef>
+
+  
+  <GeneDef ParentName="GeneHeadboneBase">
+	<defName>BTEMa_ChemPustules</defName>
+	<label>chemfuel pustules</label>
+	<description>Carriers of this gene have unsightly chemfuel pustules covering their bodies. These do no favors for the carrier's looks, and hurt a little to even have.</description>
+	<iconPath>Genes/Icons/BTEMa_ChemPustulesIcon</iconPath>
+	<renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+
+		<color>(255, 255, 255)</color>
+        <useRottenColor>true</useRottenColor>
+        <useSkinShader>true</useSkinShader>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/ChemPustules/ChemPustules</texPath>
+        <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+        <drawData>
+          <defaultData>
+            <layer>80</layer>
+          </defaultData>
+          <dataNorth>
+		  <offset>(0, 0.1, 0)</offset>
+          </dataNorth>
+          <dataEast>
+		  <offset>(0, 0, 0)</offset>
+          </dataEast>
+          <dataSouth>
+		  <offset>(0, 0.1, 0)</offset>
+          </dataSouth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+	<painOffset>0.05</painOffset>
+    <statOffsets>
+      <PawnBeauty>-2</PawnBeauty>
+    </statOffsets>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>91</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>2</biostatMet>
+  </GeneDef>
+  
+	<GeneDef>
+	<defName>BTEMa_SmokeExhaust</defName>
+	<label>smoke exhaust</label>
+	<description>Carriers of this gene have small chemfuel pockets lining their respiratory system. At will, carriers can ignite these pockets to exhale a cloud of blinding smoke.</description>
+	<iconPath>Genes/Icons/BTEMa_SmokeExhaustIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>93</displayOrderInCategory>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMa_SmokeExhaust</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <abilities>
+      <li>BTEMa_SmokeExhaust</li>
+    </abilities>
+  </GeneDef>
+</Defs>

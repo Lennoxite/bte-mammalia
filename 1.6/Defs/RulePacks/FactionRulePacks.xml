@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RulePackDef>
+    <defName>BTEMa_NamerSettlementSkulkingMammals</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[msyl][esyl] [grove]</li>
+
+
+        <li>grove->grove</li>
+        <li>grove->cave</li>
+        <li>grove->copse</li>
+        <li>grove->glade</li>
+        <li>grove->forest</li>
+
+        <li>msyl->howl</li>
+        <li>msyl->bark</li>
+        <li>msyl->horn</li>
+        <li>msyl->stalk</li>
+        <li>msyl->hide</li>
+        <li>msyl->wing</li>
+        <li>msyl->chitter</li>
+        <li>msyl->roar</li>
+        <li>msyl->glare</li>
+		
+        <li>esyl->chasm</li>
+        <li>esyl->bane</li>
+        <li>esyl->terror</li>
+        <li>esyl->hate</li>
+        <li>esyl->shaded</li>
+        <li>esyl->doom</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>BTEMa_NamerFactionSkulkingMammals</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The [esyl] [msyl] [grove]</li>
+        <li>r_name->The [msyl] [grove]</li>
+
+
+        <li>grove->collective</li>
+        <li>grove->horde</li>
+        <li>grove->plague</li>
+        <li>grove->swarm</li>
+        <li>grove->terror</li>
+
+        <li>msyl->barking</li>
+        <li>msyl->roaring</li>
+        <li>msyl->raging</li>
+        <li>msyl->stalking</li>
+        <li>msyl->voracious</li>
+        <li>msyl->unseen</li>
+        <li>msyl->chittering</li>
+
+		
+        <li>esyl->scarlet</li>
+        <li>esyl->crimson</li>
+        <li>esyl->darkened</li>
+        <li>esyl->midnight</li>
+        <li>esyl->dusk</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>BTEMa_NamerSettlementCivilMammals</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[msyl][esyl] [grove]</li>
+
+
+        <li>grove->field</li>
+        <li>grove->meadow</li>
+        <li>grove->pasture</li>
+        <li>grove->ranch</li>
+        <li>grove->paddock</li>
+
+        <li>msyl->moo</li>
+        <li>msyl->cloud</li>
+        <li>msyl->fluff</li>
+        <li>msyl->milk</li>
+        <li>msyl->puff</li>
+        <li>msyl->bell</li>
+        <li>msyl->cow</li>
+        <li>msyl->cotton</li>
+        <li>msyl->cloth</li>
+		
+        <li>esyl->land</li>
+        <li>esyl->care</li>
+        <li>esyl->bounty</li>
+        <li>esyl->graze</li>
+        <li>esyl->wealth</li>
+        <li>esyl->stove</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>BTEMa_NamerFactionCivilMammals</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The [esyl] [msyl] [grove]</li>
+        <li>r_name->The [msyl] [grove]</li>
+
+
+        <li>grove->union</li>
+        <li>grove->polity</li>
+        <li>grove->organization</li>
+        <li>grove->group</li>
+        <li>grove->traders</li>
+
+        <li>msyl->mooing</li>
+        <li>msyl->braying</li>
+        <li>msyl->hopping</li>
+        <li>msyl->grazing</li>
+        <li>msyl->sleepy</li>
+        <li>msyl->lazy</li>
+        <li>msyl->foraging</li>
+
+		
+        <li>esyl->cyan</li>
+        <li>esyl->sky</li>
+        <li>esyl->sunlit</li>
+        <li>esyl->dawn</li>
+        <li>esyl->bright</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

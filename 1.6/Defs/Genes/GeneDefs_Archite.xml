@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--SUNSCION-->
+<!--
+  <GeneDef ParentName="UVSensitivityBase">
+    <defName>BTEMa_Sundrinker</defName>
+    <label>sundrinker</label>
+    <description>Carriers of this gene have chlorophyll like cells in their skin. While in the sun, they act with superhuman speed.</description>
+    <iconPath>Genes/Icons/BTEMa_SundrinkerIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <conditionalStatAffecters>
+      <li Class="ConditionalStatAffecter_InSunlight">
+          <statOffsets>
+          <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+          <MeleeWeapon_CooldownMultiplier>-0.25</MeleeWeapon_CooldownMultiplier>
+          <RangedCooldownFactor>-0.25</RangedCooldownFactor>
+          </statOffsets>
+      </li>
+    </conditionalStatAffecters>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>solar</symbol></li>
+        <li><symbol>bright</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>BTEMa_BestowFangs</defName>
+    <label>bestow fangs</label>
+    <description>Carriers of this gene can force a pawn to temporarily mutate giant fangs, and send them into a frenzy.</description>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>92</displayOrderInCategory>
+    <iconPath>Genes/Icons/BTEMa_BestowFangsIcon</iconPath>
+    <abilities>
+      <li>BTEMa_BestowFangs</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BTEMa_BestowFangs</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <minAgeActive>3</minAgeActive>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneEyeColor">
+    <defName>BTEMa_EyesGold</defName>
+    <label>gold eyes</label>
+    <labelShortAdj>gold-eyed</labelShortAdj>
+    <description>Carriers of this gene have gold-pigmented eyes.</description>
+    <iconPath>Genes/Icons/BTEMa_GoldEyesIcon</iconPath>
+    <displayCategory>Mammalian</displayCategory>
+    <displayOrderInCategory>93</displayOrderInCategory>
+    <graphicData>
+      <drawScale>0.28</drawScale>
+      <graphicPath>Things/Pawn/Humanlike/HeadAttachments/GoldEyes/Male/GoldEyesMale</graphicPath>
+      <graphicPathFemale>Things/Pawn/Humanlike/HeadAttachments/GoldEyes/Female/GoldEyesFemale</graphicPathFemale>
+    </graphicData>
+  </GeneDef>
+-->
+-->
+</Defs>
