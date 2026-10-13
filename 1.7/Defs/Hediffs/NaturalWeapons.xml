@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--Does not trigger body purist.-->
+  <HediffDef ParentName="NaturalImplantBase">
+    <defName>BTEMa_SharpClaws</defName>
+    <label>sharp claws</label>
+    <labelNoun>set of sharp claws</labelNoun>
+    <description>A set of razor sharp claws tip the hand for tearing and butchering prey. Weak against armor, but rapidly shreds unarmored targets.</description>
+    <addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>claws</label>
+            <capacities>
+              <li>Scratch</li>
+            </capacities>
+            <power>8</power> 
+			<!--<chanceFactor>1.25</chanceFactor>-->
+            <armorPenetration>0.05</armorPenetration>
+            <cooldownTime>0.75</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+  </HediffDef>
+    <HediffDef ParentName="NaturalImplantBase">
+    <defName>BTEMa_HeavyHooves</defName>
+    <label>heavy hoof</label>
+    <labelNoun>heavy hoof</labelNoun>
+    <description>Nails meld together into a heavy hoof. Attacks made with this are slow, but can seriously dent armor.</description>
+    <addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>hoof</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>15</power> 
+            <armorPenetration>0.30</armorPenetration>
+            <cooldownTime>2.0</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+  </HediffDef>
+  
+    <HediffDef ParentName="NaturalImplantBase">
+    <defName>BTEMa_ElongatedFangs</defName>
+    <label>elongated fangs</label>
+    <labelNoun>elongated fangs</labelNoun>
+    <description>Canines replaced with massive fangs. These deal moderately strong bite attacks.</description>
+    <addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>bite</label>
+            <capacities>
+              <li>Bite</li>
+            </capacities>
+            <power>12</power> 
+            <armorPenetration>0.20</armorPenetration>
+            <cooldownTime>1.5</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+  </HediffDef> 
+  
+    <HediffDef ParentName="NaturalImplantBase">
+    <defName>BTEMa_VolatileChemfuelSystem</defName>
+    <label>volatile chemfuel system</label>
+    <labelNoun>a volatile chemfuel system</labelNoun>
+    <description>Volatile chemfuel in the body. Will cause an explosion on death.</description>
+    <defaultLabelColor>(1,0.5,0.1)</defaultLabelColor>
+    <addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+    <comps>
+      <li Class="BTE_MMLA.HediffCompProperties_ExplodeOnDeath">
+		<radius>5</radius>
+		<damageType>Flame</damageType>
+      </li>
+    </comps>
+  </HediffDef> 
+  
+    <HediffDef ParentName="NaturalImplantBase">
+    <defName>BTEMa_VolatileAntimatterSystem</defName>
+    <label>volatile antimatter system</label>
+    <labelNoun>a volatile antimatter system</labelNoun>
+    <description>Volatile antimatter in the body. Will cause an explosion on death.</description>
+    <defaultLabelColor>(0.1,0.1,0.1)</defaultLabelColor>
+    <addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+    <comps>
+      <li Class="BTE_MMLA.HediffCompProperties_ExplodeOnDeath">
+		<radius>25</radius>
+		<damageType>BombSuper</damageType>
+      </li>
+    </comps>
+  </HediffDef> 
+ 
+  <HediffDef>
+    <defName>BTEMa_FerociousRazorTeeth</defName>
+    <label>ferocious razor teeth</label>
+    <description>Injected with a mutation serum which causes extremely strong fangs to shoot out from the gums, and vastly boosting jaw strength, enabling a powerful bite attack. The blessing also boosts melee combat ability.</description>
+    <defaultLabelColor>(0.5,1,0.5)</defaultLabelColor>
+    <hediffClass>Hediff_Implant</hediffClass>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-6</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>razor tooth</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <power>22</power> 
+            <armorPenetration>0.5</armorPenetration>
+            <cooldownTime>2</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <restFallFactor>0.5</restFallFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <offset>0.2</offset>
+            </li>
+            <li>
+              <capacity>Moving</capacity>
+              <offset>0.5</offset>
+            </li>
+          </capMods>
+          <statOffsets>
+
+			<MeleeWeapon_CooldownMultiplier>-0.25</MeleeWeapon_CooldownMultiplier>
+          </statOffsets>
+			
+        </li>
+      </stages>
+  </HediffDef>
+</Defs>
